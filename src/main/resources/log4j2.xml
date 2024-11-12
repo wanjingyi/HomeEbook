@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Configuration 标签用于配置 Log4j2，其中 status 属性设置为 "WARN"，表示仅记录警告级别的日志用于运行时状态。
+    monitorInterval 属性设置为 "30"，表示每隔 30 秒自动检查配置文件更改。
+-->
+<Configuration status="WARN" monitorInterval="30">
+
+    <Properties>
+
+        <!--
+            定义名为 "baseDir" 的属性，用于指定日志文件的基本目录。其他地方可以使用 "${baseDir}" 引用这个值。
+        -->
+        <Property name="baseDir">./logs</Property>
+
+        <!--
+            定义名为 "logPattern" 的属性，用于指定日志的格式，以便在后续配置中引用。
+        -->
+
+        <Property name="logPattern">
+            %d{yyyy-MM-dd HH:mm:ss} %highlight{%6p} %style{%5pid}{bright,magenta} --- [%15.15t]
+            %style{%-40.40logger{39}}{bright,cyan} : %m%n
+        </Property>
+
+        <!-- 文件输出的格式 -->
+        <Property name="fileLayout">
+            %d{yyyy-MM-dd HH:mm:ss} %p --- [%t] %logger : %m%n"
+        </Property>
+
+        <!-- <Property name="logPattern">%highlight{%d{HH:mm:ss:SSS} [%-5p] - %l - %m%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=default, DEBUG=default}</Property> -->
+
+        <!--
+            定义名为 "fileSize" 的属性，用于指定日志文件的最大大小。其他地方可以使用 "${fileSize}" 引用这个值。
+        -->
+        <Property name="fileSize">10MB</Property>
+
+    </Properties>
+
+    <!-- OFF	0 -->
+    <!-- FATAL	100 -->
+    <!-- ERROR	200 -->
+    <!-- WARN	300 -->
+    <!-- INFO	400 -->
+    <!-- DEBUG	500 -->
+    <!-- TRACE	600 -->
+    <!-- ALL	Integer.MAX_VALUE -->
+
+    <CustomLevels>
+        <CustomLevel name="CUSTOM_LOG" intLevel="90"/>
+        <CustomLevel name="EXCEPTION_LOG" intLevel="91"/>
+        <CustomLevel name="OPERATION_LOG" intLevel="92"/>
+        <CustomLevel name="LOGIN_LOG" intLevel="93"/>
+    </CustomLevels>
+
+    <Appenders>
+
+        <!-- Console Appender 用于将日志输出到控制台。-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- 只输出 DEBUG 级别及以上的日志 -->
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!-- 使用定义的日志格式 -->
+            <PatternLayout pattern="${logPattern}"/>
+        </Console>
+
+        <!-- DEBUG 级别的日志文件输出 -->
+        <RollingFile name="DebugAppender" fileName="${baseDir}/app_debug.log"
+                     filePattern="${baseDir}/debug_%d{yyyy-MM-dd}_%i.log">
+            <!-- 仅接受 DEBUG 级别的日志 -->
+            <Filters>
+                <ThresholdFilter level="DEBUG"/>
+                <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <!-- 使用定义的日志格式 -->
+            <PatternLayout pattern="${fileLayout}"/>
+            <Policies>
+                <!-- 每隔 1 天滚动一次日志，"modulate" 表示即使没有日志产生，也会在下一天创建新文件 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- 当日志文件大小达到指定大小时触发滚动 -->
+                <SizeBasedTriggeringPolicy size="${fileSize}"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- INFO 级别的日志文件输出 -->
+        <RollingFile name="InfoAppender" fileName="${baseDir}/app_info.log"
+                     filePattern="${baseDir}/info_%d{yyyy-MM-dd}_%i.log">
+            <Filters>
+                <!-- 仅接受 INFO 级别的日志 -->
+                <!-- onMatch="ACCEPT" onMismatch="DENY" -->
+                <ThresholdFilter level="INFO"/>
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+
+            <!-- 使用定义的日志格式 -->
+            <PatternLayout pattern="${fileLayout}"/>
+            <Policies>
+                <!-- 每隔 1 天滚动一次日志，"modulate" 表示即使没有日志产生，也会在下一天创建新文件 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- 当日志文件大小达到指定大小时触发滚动 -->
+                <SizeBasedTriggeringPolicy size="${fileSize}"/>
+            </Policies>
+        </RollingFile>
+
+        <!--处理 WARN 级别的日志-->
+        <RollingFile name="WarnAppender" fileName="${baseDir}/app_warn.log"
+                     filePattern="${baseDir}/info_%d{yyyy-MM-dd}_%i.log">
+            <Filters>
+                <ThresholdFilter level="WARN"/>
+                <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <!-- 使用定义的日志格式 -->
+            <PatternLayout pattern="${fileLayout}"/>
+            <Policies>
+                <!-- 每隔 1 天滚动一次日志，"modulate" 表示即使没有日志产生，也会在下一天创建新文件 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- 当日志文件大小达到指定大小时触发滚动 -->
+                <SizeBasedTriggeringPolicy size="${fileSize}"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- ERROR 级别的日志文件输出 -->
+        <RollingFile name="ErrorAppender" fileName="${baseDir}/app_error.log"
+                     filePattern="${baseDir}/error_%d{yyyy-MM-dd}_%i.log">
+            <!-- 仅接受 ERROR 级别的日志 -->
+            <Filters>
+                <ThresholdFilter level="ERROR"/>
+                <ThresholdFilter level="FATAL" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+
+            <!-- 使用定义的日志格式 -->
+            <PatternLayout pattern="${fileLayout}"/>
+            <Policies>
+                <!-- 每隔 1 天滚动一次日志，"modulate" 表示即使没有日志产生，也会在下一天创建新文件 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- 当日志文件大小达到指定大小时触发滚动 -->
+                <SizeBasedTriggeringPolicy size="${fileSize}"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- 配置 HikariSqlFile Appender，将 SQL 日志输出到文件的日志记录追加器 -->
+        <!-- <RollingFile name="HikariSqlAppender" fileName="${baseDir}/app_sql.log" -->
+        <!--              filePattern="${baseDir}/app_sql_%d{yyyy-MM-dd}_%i.log"> -->
+        <!--     &lt;!&ndash; 使用定义的日志格式 &ndash;&gt; -->
+        <!--     <PatternLayout pattern="${fileLayout}"/> -->
+        <!--     <Policies> -->
+        <!--         &lt;!&ndash; 每隔 1 天滚动一次日志，"modulate" 表示即使没有日志产生，也会在下一天创建新文件 &ndash;&gt; -->
+        <!--         <TimeBasedTriggeringPolicy interval="1" modulate="true"/> -->
+        <!--         &lt;!&ndash; 当日志文件大小达到指定大小时触发滚动 &ndash;&gt; -->
+        <!--         <SizeBasedTriggeringPolicy size="${fileSize}"/> -->
+        <!--     </Policies> -->
+        <!-- </RollingFile> -->
+
+        <!-- 配置JDBC Appender -->
+
+        <!-- 登录日志表 -->
+        <JDBC name="LoginDatabase" tableName="sys_log_login">
+            <ConnectionFactory class="com.cj.blog.common.logs.ConnectionFactory" method="getDatabaseConnection"/>
+            <Filters>
+                <ThresholdFilter level="LOGIN_LOG"/>
+                <ThresholdFilter level="OPERATION_LOG" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+
+            <Column name="user_id" pattern="%X{user_id}"/>
+            <Column name="user_name" pattern="%X{user_name}"/>
+            <Column name="client_ip" pattern="%X{client_ip}"/>
+            <Column name="device_info" pattern="%X{device_info}"/>
+            <Column name="remarks" pattern="%X{remarks}"/>
+            <Column name="login_time" pattern="%d{yyyy-MM-dd HH:mm:ss}"/>
+        </JDBC>
+
+        <!-- 操作日志表 -->
+        <JDBC name="OperationDatabase" tableName="sys_log_operation">
+            <ConnectionFactory class="com.cj.blog.common.logs.ConnectionFactory" method="getDatabaseConnection"/>
+            <Filters>
+                <ThresholdFilter level="OPERATION_LOG"/>
+                <ThresholdFilter level="EXCEPTION_LOG" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+
+            <Column name="user_id" pattern="%X{user_id}"/>
+            <Column name="user_name" pattern="%X{user_name}"/>
+            <Column name="v_before" pattern="%X{v_before}"/>
+            <Column name="v_after" pattern="%X{v_after}"/>
+            <Column name="remarks" pattern="%X{remarks}"/>
+            <Column name="operation_time" pattern="%d{yyyy-MM-dd HH:mm:ss}"/>
+        </JDBC>
+
+        <!-- 异常日志表 -->
+        <JDBC name="ExceptionDatabase" tableName="sys_log_exception">
+            <ConnectionFactory class="com.cj.blog.common.logs.ConnectionFactory" method="getDatabaseConnection"/>
+            <Filters>
+                <ThresholdFilter level="EXCEPTION_LOG"/>
+                <ThresholdFilter level="CUSTOM_LOG" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+
+            <Column name="user_id" pattern="%X{user_id}"/>
+            <Column name="user_name" pattern="%X{user_name}"/>
+            <Column name="request_mode" pattern="%X{request_mode}"/>
+            <Column name="absolute_uri" pattern="%X{absolute_uri}"/>
+            <Column name="form_data" pattern="%X{form_data}"/>
+            <Column name="source" pattern="%X{source}"/>
+            <Column name="message" pattern="%X{message}"/>
+            <!-- <Column name="stack_trace" pattern="%X{stack_trace}"/> -->
+            <Column name="exception_time" pattern="%d{yyyy-MM-dd HH:mm:ss}"/>
+        </JDBC>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <!-- 控制台 -->
+            <AppenderRef ref="Console" level="INFO"/>
+            <!-- 文件 -->
+            <AppenderRef ref="ErrorAppender" level="ERROR"/>
+            <AppenderRef ref="WarnAppender" level="WARN"/>
+            <AppenderRef ref="InfoAppender" level="INFO"/>
+            <AppenderRef ref="DebugAppender" level="DEBUG"/>
+
+            <!-- 数据库源 -->
+            <AppenderRef ref="LoginDatabase" level="LOGIN_LOG"/>
+            <AppenderRef ref="OperationDatabase" level="OPERATION_LOG"/>
+            <AppenderRef ref="ExceptionDatabase" level="EXCEPTION_LOG"/>
+        </Root>
+
+        <!-- <Logger name="com.cj.config.logs.ConnectionFactory" level="INFO"> -->
+        <!--     <AppenderRef ref="DatabaseAppender" level="INFO"/> -->
+        <!-- </Logger> -->
+        <!-- <Root level="TRACE"> -->
+        <!--     &lt;!&ndash; 引用控制台输出和文件输出的 appender &ndash;&gt; -->
+        <!--     <AppenderRef ref="Console"/> -->
+        <!--     <AppenderRef ref="DebugAppender"/> -->
+        <!--     <AppenderRef ref="InfoAppender"/> -->
+        <!--     <AppenderRef ref="WarnAppender"/> -->
+        <!--     <AppenderRef ref="ErrorAppender"/> -->
+
+        <!--     <AppenderRef ref="LoginDatabase"/> -->
+        <!--     <AppenderRef ref="OperationDatabase" /> -->
+        <!--     &lt;!&ndash; <AppenderRef ref="ExceptionDatabase" level="Exception"/> &ndash;&gt; -->
+        <!-- </Root> -->
+
+
+        <Logger name="org.apache.logging.log4j" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!--额外配置的logger-->
+        <!--log4j2 自带过滤日志-->
+        <!-- Apache Tomcat Web服务器配置加载的日志 -->
+        <Logger name="org.apache.catalina.startup.DigesterFactory" level="ERROR">
+            <!-- 仅记录错误级别的日志，通常用于记录严重的配置错误 -->
+        </Logger>
+
+        <!-- 与 Apache Tomcat 相关的组件生命周期信息 -->
+        <Logger name="org.apache.catalina.util.LifecycleBase" level="ERROR">
+            <!-- 仅记录错误级别的信息 -->
+        </Logger>
+
+        <!-- Apache Tomcat HTTP 协议处理器的日志记录 -->
+        <Logger name="org.apache.coyote.http11.Http11NioProtocol" level="WARN">
+            <!-- 记录警告级别及更高级别的信息，通常用于记录一般警告信息 -->
+        </Logger>
+
+        <!-- Apache SSHD（SSH Server）库的日志记录 -->
+        <Logger name="org.apache.sshd.common.util.SecurityUtils" level="WARN">
+            <!-- 记录警告级别及更高级别的信息，通常用于记录一般警告信息 -->
+        </Logger>
+
+        <!-- 与 Apache Tomcat 相关的 NIO 选择器池的日志记录 -->
+        <Logger name="org.apache.tomcat.util.net.NioSelectorPool" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+
+        <!-- 与 CRaSH（Common Reusable SHell）相关的库和 SSH 支持的日志记录 -->
+        <Logger name="org.crsh.plugin" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+        <Logger name="org.crsh.ssh" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+
+        <!-- Eclipse Jetty Web服务器的组件生命周期的日志记录 -->
+        <Logger name="org.eclipse.jetty.util.component.AbstractLifeCycle" level="ERROR">
+            <!-- 仅记录错误级别的信息 -->
+        </Logger>
+
+        <!-- Hibernate Validator相关日志 -->
+        <Logger name="org.hibernate.validator.internal.util.Version" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+        <!-- 与 Spring Boot Actuator 相关的日志记录 -->
+        <Logger name="org.springframework.boot.actuate.autoconfigure.CrshAutoConfiguration" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+        <Logger name="org.springframework.boot.actuate.endpoint.jmx" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+        <!-- Thymeleaf模板引擎的日志记录 -->
+        <Logger name="org.thymeleaf" level="WARN">
+            <!-- 记录警告级别及更高级别的信息 -->
+        </Logger>
+
+    </Loggers>
+
+</Configuration>
