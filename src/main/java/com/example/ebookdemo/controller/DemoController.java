@@ -1,7 +1,9 @@
 package com.example.ebookdemo.controller;
 
 
+import com.example.ebookdemo.domain.Demo;
 import com.example.ebookdemo.domain.Test;
+import com.example.ebookdemo.service.DemoService;
 import com.example.ebookdemo.service.TestService;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,26 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class HelloController {
-
-    @Value("${name:test}")
-    private String name;
+@RequestMapping("/demo")
+public class DemoController {
 
     @Resource
-    private TestService testService;
+    private DemoService demoService;
 
-    @GetMapping("/test/name")
-    public String getName() {
-        return name;
-    }
-
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello, EBook Demo!";
-    }
-
-    @GetMapping("/test")
-    public List<Test> test() {
-        return testService.list();
+    @GetMapping("/controller")
+    public List<Demo> list () {
+        return demoService.list();
     }
 }
