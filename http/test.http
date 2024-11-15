@@ -7,4 +7,4 @@ GET http://localhost:8081/test/name
 GET http://localhost:8081/demo/controller
 
 ###
-GET http://localhost:8081/ebook/lists
+GET http://localhost:8081/ebook/lists?name=vue
