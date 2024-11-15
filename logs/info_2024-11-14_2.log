@@ -1,0 +1,3 @@
+2024-11-14 15:18:45 WARN --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Injection of autowired dependencies failed
+"2024-11-14 15:20:02 WARN --- [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'helloController': Injection of autowired dependencies failed
+"
