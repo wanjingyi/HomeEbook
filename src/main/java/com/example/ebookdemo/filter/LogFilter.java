@@ -23,11 +23,11 @@ package com.example.ebookdemo.filter;// package com.jiawa.wiki.filter;
          // 打印请求信息
          HttpServletRequest request = (HttpServletRequest) servletRequest;
          LOG.info("------------- LogFilter 开始 -------------");
-         LOG.info("请求地址: {} {}", request.getRequestURL().toString(), request.getMethod());
-         LOG.info("远程地址: {}", request.getRemoteAddr());
+         LOG.info("过滤器请求地址: {} {}", request.getRequestURL().toString(), request.getMethod());
+         LOG.info("过滤器远程地址: {}", request.getRemoteAddr());
 
          long startTime = System.currentTimeMillis();
          filterChain.doFilter(servletRequest, servletResponse);
-         LOG.info("------------- LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
+         LOG.info("------------- 过滤器LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
      }
  }
