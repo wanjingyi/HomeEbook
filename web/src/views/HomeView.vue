@@ -42,18 +42,33 @@
       </a-menu>
     </a-layout-sider>
     <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
-      Content
+      {{ebooks}}------{{books2}}
     </a-layout-content>
   </a-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted, ref, reactive,toRef } from 'vue';
+import axios from 'axios'
 
 export default defineComponent({
   name: 'HomeView',
-  components: {
+  setup() {
+    const ebooks = ref();
+    const ebooks1 = reactive({books:[]})
+    onMounted(() => {
+      axios.get('http://localhost:8081/ebook/lists?name=vue').then((response) => {
+        const data = response.data;
+        ebooks.value = data.content;//方式一
+        ebooks1.books = data.content;//方式二
+        console.log(response, '后台接口');
+      })
+    })
 
-  },
+    return {
+      ebooks,
+      books2: toRef(ebooks1,'books')
+    }
+  }
 });
 </script>
