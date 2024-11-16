@@ -16428,4 +16428,125 @@ Unconditional classes:
 "2024-11-16 14:53:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "2024-11-16 14:54:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
 "2024-11-16 14:54:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:54:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:54:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists", parameters={}
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30d6429c] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@1833132279 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef] will not be managed by Spring
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30d6429c]
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@391c837b]
+"2024-11-16 14:55:09 DEBUG --- [http-nio-8081-exec-5] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:55:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:55:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:55:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:55:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists", parameters={}
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25e1f376] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@65487432 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef] will not be managed by Spring
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25e1f376]
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@1435662b]
+"2024-11-16 14:56:20 DEBUG --- [http-nio-8081-exec-8] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:56:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:56:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:56:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:56:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:57:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:57:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:57:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:57:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists", parameters={}
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ad0e512] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@96000032 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef] will not be managed by Spring
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ad0e512]
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@54e9b2e3]
+"2024-11-16 14:58:00 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:58:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:58:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists", parameters={}
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4065c2c9] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@1292154069 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef] will not be managed by Spring
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4065c2c9]
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@4d1875a4]
+"2024-11-16 14:58:28 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists", parameters={}
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62885f01] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@1317724374 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef] will not be managed by Spring
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62885f01]
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@1f10a0ff]
+"2024-11-16 14:58:51 DEBUG --- [http-nio-8081-exec-4] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:58:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:58:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:59:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:59:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:59:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:59:56 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 15:00:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 15:00:26 DEBUG --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 15:00:36 DEBUG --- [SIGINT handler] java.lang.Runtime : Runtime.exit() called with status: 130
+" java.lang.Throwable: Runtime.exit(130)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179) ~[?:?]
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160) ~[?:?]
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51) ~[?:?]
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.boot.availability.ApplicationAvailabilityBean : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36ea20a4, started on Sat Nov 16 14:32:43 CST 2024
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Stopping beans in phase 2147483647
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Bean 'applicationTaskExecutor' completed its stop procedure
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Stopping beans in phase 2147482623
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Bean 'webServerGracefulShutdown' completed its stop procedure
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Stopping beans in phase 2147481599
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Bean 'webServerStartStop' completed its stop procedure
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Stopping beans in phase -2147483647
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.context.support.DefaultLifecycleProcessor : Bean 'springBootLoggingLifecycle' completed its stop procedure
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.jmx.export.annotation.AnnotationMBeanExporter : Unregistering JMX-exposed beans
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7544a83e: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3479a205: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@58710d1: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@54565d4a: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2ec79954: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@501865bd: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@924b2c4: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3af19f9a: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [HikariPool-3 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-3 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@51bd470d: (connection evicted)
+"2024-11-16 15:00:36 DEBUG --- [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 "

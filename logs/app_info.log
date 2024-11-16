@@ -40,4 +40,114 @@
 "2024-11-16 13:20:22 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
 "2024-11-16 13:20:22 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f128b2d
 "2024-11-16 13:20:22 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+"2024-11-16 14:25:59 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+"2024-11-16 14:25:59 INFO --- [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown initiated...
+"2024-11-16 14:25:59 INFO --- [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown completed.
+"2024-11-16 14:25:59 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:25:59 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+"2024-11-16 14:25:59 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+"2024-11-16 14:26:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:26:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 87 ms
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:26:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.201 seconds (process running for 4244.819)
+"2024-11-16 14:26:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:26:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:26:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:27:09 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+"2024-11-16 14:27:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:27:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 84 ms
+"2024-11-16 14:27:09 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+"2024-11-16 14:27:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:27:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 82 ms
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:27:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.171 seconds (process running for 4284.685)
+"2024-11-16 14:27:22 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:27:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:27:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:32:24 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-16 14:32:24 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:32:24 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 100 ms
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:32:24 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.222 seconds (process running for 4587.131)
+"2024-11-16 14:32:24 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:32:24 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:32:24 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:32:37 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-16 14:32:37 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:32:37 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 86 ms
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:32:38 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.197 seconds (process running for 4600.374)
+"2024-11-16 14:32:38 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:32:38 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:32:38 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:32:40 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-16 14:32:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:32:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 81 ms
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:32:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.169 seconds (process running for 4603.432)
+"2024-11-16 14:32:41 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:32:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:32:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:32:43 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-16 14:32:43 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 25472 (D:\practive_project\testPractice\EbookDemo\target\classes started by e1561 in D:\practive_project\testPractice\EbookDemo)
+"2024-11-16 14:32:43 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 88 ms
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-16 14:32:43 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.189 seconds (process running for 4605.478)
+"2024-11-16 14:32:43 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-16 14:32:43 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-16 14:32:43 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 0 ms
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d9a98ef
+"2024-11-16 14:32:56 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Start completed.
+"2024-11-16 15:00:36 INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Shutdown initiated...
+"2024-11-16 15:00:36 INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Shutdown completed.
 "
