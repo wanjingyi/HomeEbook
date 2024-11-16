@@ -3800,4 +3800,253 @@ Unconditional classes:
 "2024-11-16 13:40:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "2024-11-16 13:40:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
 "2024-11-16 13:40:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:41:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:41:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:41:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:41:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:42:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:42:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:42:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:42:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:43:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:43:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:43:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:43:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:44:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:44:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:44:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:44:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:45:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:45:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:45:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:45:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:46:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:46:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:46:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:46:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:47:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:47:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:47:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:47:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:48:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:48:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:48:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:48:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:49:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:49:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:49:44 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1f128b2d: (connection has passed maxLifetime)
+"2024-11-16 13:49:44 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:44 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:44 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:49:44 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@969ce2f
+"2024-11-16 13:49:47 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@513ac809: (connection has passed maxLifetime)
+"2024-11-16 13:49:47 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:47 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:47 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:49:47 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4854c414
+"2024-11-16 13:49:51 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@17b64c0a: (connection has passed maxLifetime)
+"2024-11-16 13:49:51 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:51 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:51 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:49:51 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7956af9c
+"2024-11-16 13:49:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:49:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:49:56 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@218a1d5f: (connection has passed maxLifetime)
+"2024-11-16 13:49:56 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:56 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:49:56 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:49:56 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@287b3b5b
+"2024-11-16 13:50:04 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@41a5e210: (connection has passed maxLifetime)
+"2024-11-16 13:50:04 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:04 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:04 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:04 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60b41557
+"2024-11-16 13:50:05 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@65896866: (connection has passed maxLifetime)
+"2024-11-16 13:50:05 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:05 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:05 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:05 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21891f6c
+"2024-11-16 13:50:08 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@98e82b: (connection has passed maxLifetime)
+"2024-11-16 13:50:08 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:08 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:08 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:08 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10e2d8f7
+"2024-11-16 13:50:15 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@613075cb: (connection has passed maxLifetime)
+"2024-11-16 13:50:15 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:15 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:15 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:15 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@349619d
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@54555f4c: (connection has passed maxLifetime)
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42746ba6
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Add connection elided, waiting=0, adders pending/running=2
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@70ae615e: (connection has passed maxLifetime)
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2261844412, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security : X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.39_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2874207510, Valid from:2024/10/23 13:59, Valid until:2034/10/21 13:59
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] jdk.event.security :  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2261844412
+"2024-11-16 13:50:18 DEBUG --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4393ee66
+"2024-11-16 13:50:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:50:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:50:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:50:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:51:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:51:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:51:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:51:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:52:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:52:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:52:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:52:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:53:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:53:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:53:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:53:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:54:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:54:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:54:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:54:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:55:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:55:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:55:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:55:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:56:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:56:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists?name=vue", parameters={masked}
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7383ecc4] was not registered for synchronization because synchronization is not active
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@1037799938 wrapping com.mysql.cj.jdbc.ConnectionImpl@969ce2f] will not be managed by Spring
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: %vue%(String)
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 1
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7383ecc4]
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@6cb283b4]
+"2024-11-16 13:56:44 DEBUG --- [http-nio-8081-exec-7] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 13:56:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:56:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:57:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:57:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:57:38 DEBUG --- [http-nio-8081-exec-8] org.apache.coyote.http11.Http11Processor : Error parsing HTTP request header
+" java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:792) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-11-16 13:57:38 DEBUG --- [http-nio-8081-exec-8] org.apache.coyote.http11.Http11Processor : Error state [CLOSE_CONNECTION_NOW] reported while processing request
+" java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:792) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-11-16 13:57:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:57:52 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:58:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:58:22 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:58:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:58:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:59:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:59:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 13:59:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 13:59:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:00:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:00:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:00:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:00:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:01:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:01:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:01:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:01:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:02:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:02:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:02:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:02:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:03:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:03:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:03:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:03:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:04:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:04:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:04:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:04:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:05:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:05:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:05:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:05:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:06:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:06:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:06:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:06:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:07:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:07:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:07:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:07:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:08:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:08:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:08:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:08:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:09:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:09:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:09:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:09:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:10:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:10:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:10:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:10:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:11:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:11:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:11:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:11:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:12:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:12:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:12:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:12:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:13:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:13:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:13:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:13:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:14:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:14:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:14:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:14:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:15:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:15:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists?name=vue", parameters={masked}
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookReq)
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.mybatis.spring.SqlSessionUtils : Creating a new SqlSession
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.mybatis.spring.SqlSessionUtils : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4deb6456] was not registered for synchronization because synchronization is not active
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.mybatis.spring.transaction.SpringManagedTransaction : JDBC Connection [HikariProxyConnection@1012784788 wrapping com.mysql.cj.jdbc.ConnectionImpl@969ce2f] will not be managed by Spring
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==>  Preparing: select id, `name`, category1_id, category2_id, cover, description, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: %vue%(String)
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 1
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4deb6456]
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@6d35496f]
+"2024-11-16 14:15:44 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-16 14:15:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:15:53 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-16 14:16:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-16 14:16:23 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "
