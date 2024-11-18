@@ -45,4 +45,6 @@ insert into `ebook` (id,name,description) values (8,'断舍离','打开自己的
 insert into `ebook` (id,name,description) values (9,'解忧杂货铺','解忧故事丛书');
 insert into `ebook` (id,name,description) values (10,'白夜行','侦探类小说，悬疑调查类');
 
+select * from ebook;
+
 
