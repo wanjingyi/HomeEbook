@@ -7,7 +7,7 @@
                     <template v-if="column.key === 'name'">
                         <span>
                             <smile-outlined />
-                            Name
+                            名称
                         </span>
                     </template>
                 </template>
@@ -16,27 +16,25 @@
                     <template v-if="column.key === 'name'">
                         <a>
                             {{ record.name }}
+                            {{ record.cover }}
                         </a>
                     </template>
-                    <template v-else-if="column.key === 'tags'">
-                        <span>
+                    <template v-else-if="column.key === 'cover'">
+                        <!-- <span>
                             <a-tag v-for="tag in record.tags" :key="tag"
                                 :color="tag === 'loser' ? 'volcano' : tag.length > 5 ? 'geekblue' : 'green'">
                                 {{ tag.toUpperCase() }}
                             </a-tag>
-                        </span>
+                        </span> -->
+                        <!-- <a-image
+                            src={{record.cover}} /> -->
+                        <a-avatar :src="record.cover" />
                     </template>
                     <template v-else-if="column.key === 'action'">
-                        <span>
-                            <a>Invite 一 {{ record.name }}</a>
-                            <a-divider type="vertical" />
-                            <a>Delete</a>
-                            <a-divider type="vertical" />
-                            <a class="ant-dropdown-link">
-                                More actions
-                                <down-outlined />
-                            </a>
-                        </span>
+                        <a-space>
+                            <a-button type="primary" ghost>Primary</a-button>
+                            <a-button type="primary" danger ghost>Danger</a-button>
+                        </a-space>
                     </template>
                 </template>
             </a-table>
@@ -54,29 +52,32 @@ export default defineComponent({
         const ebooks = ref();
         const pagination = ref({
             current: 1,
-            pageSize: 2,
+            pageSize: 3,
             total: 0
         })
         const loading = ref(false);
         const columns = [
             {
                 name: '名称',
+                key: 'name',
                 dataIndex: 'name',
             },
             {
                 title: '分类一',
-                dataIndex: 'category1_id',
+                key: 'category1Id',
+                dataIndex: 'category1Id',
                 // slots: { customRender: 'category1Id' }
             },
             {
                 title: '分类二',
-                dataIndex: 'category2_id',
+                key: 'category2Id',
+                dataIndex: 'category2Id',
                 // slots: { customRender: 'category2Id' }
             },
             {
                 title: '封面',
                 key: 'cover',
-                slots: { customRender: 'cover' }
+                dataIndex: 'cover'
             },
             {
                 title: '描述',
@@ -101,7 +102,7 @@ export default defineComponent({
             {
                 title: 'Action',
                 key: 'action',
-                slots: { customRender: 'action' }
+                // slots: { customRender: 'action' }
             },
         ]
 
@@ -129,7 +130,7 @@ export default defineComponent({
          * 表格低级页码时触发
          */
         const handleTableChange = (pagination: any) => {
-            console.log('看看自带的分页参数都有啥',pagination);
+            console.log('看看自带的分页参数都有啥', pagination);
             handleQuery({
                 page: pagination.current,
                 size: pagination.pageSize
