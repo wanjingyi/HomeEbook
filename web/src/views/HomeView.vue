@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, reactive, toRef } from 'vue';
+import { defineComponent, onMounted, ref} from 'vue';
 import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons-vue';
 import axios from 'axios'
 

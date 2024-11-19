@@ -23,14 +23,20 @@
                     </template>
                     <template v-else-if="column.key === 'action'">
                         <a-space>
-                            <a-button type="primary" ghost>Primary</a-button>
-                            <a-button type="primary" danger ghost>Danger</a-button>
+                            <a-button type="primary" ghost @click="edit">编辑</a-button>
+                            <a-button type="primary" danger ghost>删除</a-button>
                         </a-space>
                     </template>
                 </template>
             </a-table>
         </a-layout-content>
     </a-layout>
+
+    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk">
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+    </a-modal>
 </template>
 
 <script lang="ts">
@@ -47,6 +53,8 @@ export default defineComponent({
             total: 0
         })
         const loading = ref(false);
+        const open = ref<boolean>(false);
+        const confirmLoading = ref<boolean>(false);
         const columns = [
             {
                 name: '名称',
@@ -135,12 +143,32 @@ export default defineComponent({
             });
         }
 
+        /**
+         * 编辑
+         */
+        const edit = () => {
+            open.value = true;
+        }
+
+        const handleOk = () => {
+            // open.value = false;
+            confirmLoading.value = true;
+            setTimeout(() => {
+                open.value = false;
+                confirmLoading.value = false;
+            }, 2000);
+        }
+
         return {
             ebooks,
             columns,
             pagination,
             loading,
-            handleTableChange
+            open,
+            confirmLoading,
+            handleTableChange,
+            edit,
+            handleOk
         }
     }
 })
