@@ -1,6 +1,5 @@
 package com.example.ebookdemo.service;
 
-import com.example.ebookdemo.config.EbookDemoApplication;
 import com.example.ebookdemo.domain.Ebook;
 import com.example.ebookdemo.domain.EbookExample;
 import com.example.ebookdemo.mapper.EbookMapper;
@@ -42,24 +41,14 @@ public class EbookService {
         LOG.info("总页数:{}",pageInfo.getPages());
 
 
-//        List<EbookResp> respList = new ArrayList<>();
-//        for (Ebook ebook : ebookList) {
-////            EbookResp ebookResp = new EbookResp();
-////            BeanUtils.copyProperties(ebook,ebookResp);
-//              对象复制
-//            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
-//
-//            respList.add(ebookResp);
-//        }
-
-
         //列表复制
         List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
 
         PageResp<EbookResp> pageResp = new PageResp<>();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
-
+        LOG.info("list: {}",list);
+        LOG.info("数据: {}",pageResp);
 
         return pageResp;
     }

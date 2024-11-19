@@ -16,18 +16,9 @@
                     <template v-if="column.key === 'name'">
                         <a>
                             {{ record.name }}
-                            {{ record.cover }}
                         </a>
                     </template>
                     <template v-else-if="column.key === 'cover'">
-                        <!-- <span>
-                            <a-tag v-for="tag in record.tags" :key="tag"
-                                :color="tag === 'loser' ? 'volcano' : tag.length > 5 ? 'geekblue' : 'green'">
-                                {{ tag.toUpperCase() }}
-                            </a-tag>
-                        </span> -->
-                        <!-- <a-image
-                            src={{record.cover}} /> -->
                         <a-avatar :src="record.cover" />
                     </template>
                     <template v-else-if="column.key === 'action'">
@@ -52,7 +43,7 @@ export default defineComponent({
         const ebooks = ref();
         const pagination = ref({
             current: 1,
-            pageSize: 3,
+            pageSize: 5,
             total: 0
         })
         const loading = ref(false);
@@ -102,7 +93,6 @@ export default defineComponent({
             {
                 title: 'Action',
                 key: 'action',
-                // slots: { customRender: 'action' }
             },
         ]
 
@@ -111,19 +101,27 @@ export default defineComponent({
          */
         const handleQuery = (params: any) => {
             loading.value = true
-            axios.get('/ebook/lists').then((response) => {
-                ebooks.value = response.data.content
+            axios.get('/ebook/lists',{
+            params:{
+                page: params.page,
+                size: params.size
+            }
+            }).then((response) => {
+                loading.value = false;
+                const data = response.data
+                ebooks.value =data.content.list
 
                 //重置分页
                 pagination.value.current = params.page;
+                pagination.value.total = data.content.total;
             })
         }
 
         onMounted(() => {
-            // axios.get('/ebook/lists').then((response) => {
-            //     ebooks.value = response.data.content
-            // })
-            handleQuery({});
+            handleQuery({
+                page:1,
+                size:pagination.value.pageSize
+            });
         })
 
         /**
