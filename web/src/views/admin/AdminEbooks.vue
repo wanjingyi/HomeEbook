@@ -23,7 +23,7 @@
                     </template>
                     <template v-else-if="column.key === 'action'">
                         <a-space>
-                            <a-button type="primary" ghost @click="edit">编辑</a-button>
+                            <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
                             <a-button type="primary" danger ghost>删除</a-button>
                         </a-space>
                     </template>
@@ -33,9 +33,33 @@
     </a-layout>
 
     <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk">
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
+        <a-form :model="ebookOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off"
+            @finish="onFinish" @finishFailed="onFinishFailed">
+            <a-form-item label="封面" name="cover">
+                <a-input v-model:value="ebookOne.cover" />
+            </a-form-item>
+
+            <a-form-item label="名称" name="name">
+                <a-input v-model:value="ebookOne.name" />
+            </a-form-item>
+
+            <a-form-item label="分类一" name="category1Id">
+                <a-input v-model:value="ebookOne.category1Id" />
+            </a-form-item>
+
+            <a-form-item label="分类二" name="category2Id">
+                <a-input v-model:value="ebookOne.category2Id" />
+            </a-form-item>
+
+            <a-form-item label="描述" name="description">
+                <a-input v-model:value="ebookOne.description" />
+            </a-form-item>
+
+
+            <a-form-item :wrapper-col="{ offset: 8, span: 16 }">
+                <a-button type="primary" html-type="submit">提交</a-button>
+            </a-form-item>
+        </a-form>
     </a-modal>
 </template>
 
@@ -109,15 +133,15 @@ export default defineComponent({
          */
         const handleQuery = (params: any) => {
             loading.value = true
-            axios.get('/ebook/lists',{
-            params:{
-                page: params.page,
-                size: params.size
-            }
+            axios.get('/ebook/lists', {
+                params: {
+                    page: params.page,
+                    size: params.size
+                }
             }).then((response) => {
                 loading.value = false;
                 const data = response.data
-                ebooks.value =data.content.list
+                ebooks.value = data.content.list
 
                 //重置分页
                 pagination.value.current = params.page;
@@ -127,8 +151,8 @@ export default defineComponent({
 
         onMounted(() => {
             handleQuery({
-                page:1,
-                size:pagination.value.pageSize
+                page: 1,
+                size: pagination.value.pageSize
             });
         })
 
@@ -146,8 +170,10 @@ export default defineComponent({
         /**
          * 编辑
          */
-        const edit = () => {
+        const ebookOne = ref();
+        const edit = (record:any) => {
             open.value = true;
+            ebookOne.value = record;
         }
 
         const handleOk = () => {
@@ -159,6 +185,14 @@ export default defineComponent({
             }, 2000);
         }
 
+        const onFinish = (values: any) => {
+            console.log('Success:', values);
+        };
+
+        const onFinishFailed = (errorInfo: any) => {
+            console.log('Failed:', errorInfo);
+        };
+
         return {
             ebooks,
             columns,
@@ -166,9 +200,12 @@ export default defineComponent({
             loading,
             open,
             confirmLoading,
+            ebookOne,
             handleTableChange,
             edit,
-            handleOk
+            handleOk,
+            onFinish,
+            onFinishFailed
         }
     }
 })
