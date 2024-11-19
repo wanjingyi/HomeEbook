@@ -81,15 +81,21 @@ export default defineComponent({
   name: 'HomeView',
   setup() {
     const ebooks:any = ref();
+
     onMounted(() => {
-      axios.get('/ebook/lists').then((response) => {
-        ebooks.value = response.data.content
+      axios.get('/ebook/lists',{
+        params: {
+          page:1,
+          size: 1000
+        }
+      }).then((response) => {
+        ebooks.value = response.data.content.list
       })
     })
 
     return {
       ebooks,
-      actions
+      actions,
     }
   }
 });

@@ -1828,4 +1828,6 @@ Unconditional classes:
 "2024-11-19 16:43:00 DEBUG --- [http-nio-8081-exec-6] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
 "2024-11-19 16:43:23 DEBUG --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 "2024-11-19 16:43:23 DEBUG --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-19 16:43:53 DEBUG --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-19 16:43:53 DEBUG --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "
