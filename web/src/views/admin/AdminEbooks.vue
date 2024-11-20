@@ -2,6 +2,8 @@
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
             <p>
+                <a-input-search v-model:value="queryName" placeholder="电子书名称" style="width: 200px;padding-right:10px;" size="large" type="primary" ghost
+                    @search="handleQueryEbookName(queryName)" />
                 <a-button @click="add" type="primary" ghost :size="size">新增</a-button>
             </p>
             <a-table :columns="columns" :row-key="record => record.id" :data-source="ebooks" :pagination="pagination"
@@ -76,9 +78,10 @@ export default defineComponent({
     setup() {
         const size = ref<SizeType>('large');
         const ebooks = ref();
+        const queryName = ref();
         const pagination = ref({
             current: 1,
-            pageSize: 100,
+            pageSize: 10,
             total: 0
         })
         const loading = ref(false);
@@ -152,7 +155,7 @@ export default defineComponent({
                     //重置分页
                     pagination.value.current = params.page;
                     pagination.value.total = data.content.total;
-                }else {
+                } else {
                     message.error(data.message);
                 }
 
@@ -201,7 +204,7 @@ export default defineComponent({
                         page: pagination.value.current,
                         size: pagination.value.pageSize
                     });
-                }else {
+                } else {
                     message.error(data.message);
                 }
 
@@ -231,6 +234,31 @@ export default defineComponent({
             })
         }
 
+        /**查询单本电子书 */
+        const handleQueryEbookName = (queryName:any) => {
+            loading.value = true
+            axios.get('/ebook/lists', {
+               params: {
+                page:1,
+                size: pagination.value.pageSize,
+                name:queryName
+               }
+            }).then((response) => {
+                loading.value = false;
+                const data = response.data
+                if (data.success) {
+                    ebooks.value = data.content.list
+
+                    //重置分页
+                    // pagination.value.current = params.page;
+                    // pagination.value.total = data.content.total;
+                } else {
+                    message.error(data.message);
+                }
+
+            })
+        }
+
         return {
             size,
             ebooks,
@@ -245,6 +273,8 @@ export default defineComponent({
             handleOk,
             add,
             handleDelete,
+            queryName,
+            handleQueryEbookName
         }
     }
 })
