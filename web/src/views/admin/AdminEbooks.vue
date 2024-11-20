@@ -72,6 +72,7 @@ import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 import type { SizeType } from 'ant-design-vue/es/config-provider';
 import { message } from 'ant-design-vue';
+import {Tool} from '@/util/tool'
 
 export default defineComponent({
     name: 'AdminEbooks',
@@ -186,7 +187,7 @@ export default defineComponent({
         const ebookOne = ref();
         const edit = (record: any) => {
             open.value = true;
-            ebookOne.value = record;
+            ebookOne.value = Tool.copy(record);
         }
 
         const handleOk = () => {
