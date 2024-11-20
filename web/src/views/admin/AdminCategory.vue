@@ -55,7 +55,14 @@
             </a-form-item>
 
             <a-form-item label="父分类" name="parent">
-                <a-input v-model:value="categoryOne.parent" />
+                <!-- <a-input v-model:value="categoryOne.parent" /> -->
+                <a-select
+                ref="select"
+                v-model:value="categoryOne.parent"
+                >
+                    <a-select-option value="0">无</a-select-option>
+                    <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="categoryOne.id === c.id">{{c.name}}</a-select-option>
+                </a-select>
             </a-form-item>
         </a-form>
     </a-modal>
@@ -182,7 +189,11 @@ export default defineComponent({
                 loading.value = false;
                 const data = response.data
                 if (data.success) {
-                    categorys.value = data.content.list
+                    categorys.value = data.content
+                    console.log("原始数组", categorys.value);
+                    level1.value = [];
+                    level1.value = Tool.array2Tree(categorys.value, 0);
+                    console.log("递归后数组", level1.value);
                 } else {
                     message.error(data.message);
                 }
