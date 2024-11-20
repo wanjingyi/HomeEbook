@@ -27,7 +27,11 @@
                     <template v-else-if="column.key === 'action'">
                         <a-space>
                             <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
-                            <a-button type="primary" danger ghost>删除</a-button>
+                            <!-- <a-button type="primary" danger ghost @click="handleDelete(record.id)">删除</a-button> -->
+                            <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
+                                @confirm="handleDelete(record.id)">
+                                <a-button type="primary" danger ghost>删除</a-button>
+                            </a-popconfirm>
                         </a-space>
                     </template>
                 </template>
@@ -35,8 +39,9 @@
         </a-layout-content>
     </a-layout>
 
-    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk" okText="确定" cancelText="取消">
-        <a-form :model="ebookOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off" >
+    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk" okText="确定"
+        cancelText="取消">
+        <a-form :model="ebookOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off">
             <a-form-item label="封面" name="cover">
                 <a-input v-model:value="ebookOne.cover" />
             </a-form-item>
@@ -64,6 +69,7 @@
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 import type { SizeType } from 'ant-design-vue/es/config-provider';
+import { message } from 'ant-design-vue';
 
 export default defineComponent({
     name: 'AdminEbooks',
@@ -72,7 +78,7 @@ export default defineComponent({
         const ebooks = ref();
         const pagination = ref({
             current: 1,
-            pageSize: 5,
+            pageSize: 100,
             total: 0
         })
         const loading = ref(false);
@@ -140,11 +146,16 @@ export default defineComponent({
             }).then((response) => {
                 loading.value = false;
                 const data = response.data
-                ebooks.value = data.content.list
+                if (data.success) {
+                    ebooks.value = data.content.list
 
-                //重置分页
-                pagination.value.current = params.page;
-                pagination.value.total = data.content.total;
+                    //重置分页
+                    pagination.value.current = params.page;
+                    pagination.value.total = data.content.total;
+                }else {
+                    message.error(data.message);
+                }
+
             })
         }
 
@@ -198,9 +209,24 @@ export default defineComponent({
         const add = () => {
             open.value = true;
             ebookOne.value = {};
-
         }
 
+        /**删除 */
+        const handleDelete = (id: number) => {
+            axios.delete('/ebook/delete/' + id).then((response) => {
+                const data = response.data
+                if (data.success) {
+
+                    //重新加载列表
+                    handleQuery({
+                        //重新查询当前页面的所有数据
+                        page: pagination.value.current,
+                        size: pagination.value.pageSize
+                    });
+                }
+
+            })
+        }
 
         return {
             size,
@@ -214,7 +240,8 @@ export default defineComponent({
             handleTableChange,
             edit,
             handleOk,
-            add
+            add,
+            handleDelete,
         }
     }
 })

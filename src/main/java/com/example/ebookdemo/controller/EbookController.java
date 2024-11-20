@@ -7,6 +7,7 @@ import com.example.ebookdemo.resp.EbookQueryResp;
 import com.example.ebookdemo.resp.PageResp;
 import com.example.ebookdemo.service.EbookService;
 import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ public class EbookController {
     private EbookService ebookService;
 
     @GetMapping("/lists")
-    public CommonResp allList(EbookQueryReq req) {
+    public CommonResp allList(@Valid EbookQueryReq req) {
         CommonResp<PageResp<EbookQueryResp>> results = new CommonResp<>();
         PageResp<EbookQueryResp> ebookList = ebookService.allLists(req);
         results.setContent(ebookList);
@@ -34,6 +35,13 @@ public class EbookController {
         ebookService.saveEbook(ebook);
         results.setMessage("数据保存成功");
         LOG.info("数据Controller: {}", ebook);
+        return results;
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public CommonResp deleteEbook(@PathVariable Long id) {
+        CommonResp results = new CommonResp<>();
+       ebookService.delete(id);
         return results;
     }
 }
