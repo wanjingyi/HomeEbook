@@ -24,7 +24,7 @@ export default defineComponent({
 
 <style>
 .content_ebook {
-  height: 100%;
+  height:auto;
 }
 
 #components-layout-demo-top-side-2 .logo {

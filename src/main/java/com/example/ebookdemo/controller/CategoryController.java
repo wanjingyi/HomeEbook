@@ -13,6 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/category")
@@ -43,6 +45,15 @@ public class CategoryController {
     public CommonResp deleteCategory(@PathVariable Long id) {
         CommonResp results = new CommonResp<>();
        categoryService.delete(id);
+        return results;
+    }
+
+    @GetMapping("/allData")
+    public CommonResp allData() {
+        CommonResp<List<CategoryQueryResp>> results = new CommonResp<>();
+        List<CategoryQueryResp> categoryList = categoryService.allData();
+        results.setContent(categoryList);
+        LOG.info("数据Controller: {}",categoryList);
         return results;
     }
 }

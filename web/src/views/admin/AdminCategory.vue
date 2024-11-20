@@ -2,12 +2,12 @@
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
             <p>
-                <a-input-search v-model:value="queryName" placeholder="分类名称" style="width: 200px;padding-right:10px;" size="large" type="primary" ghost
-                    @search="handleQuerycategoryName(queryName)" />
+                <!-- <a-input-search v-model:value="queryName" placeholder="分类名称" style="width: 200px;padding-right:10px;" size="large" type="primary" ghost
+                    @search="handleQuerycategoryName(queryName)" /> -->
+                <a-button type="primary" ghost :size="size" @click="handleQuerycategoryName">查询</a-button>
                 <a-button @click="add" type="primary" ghost :size="size">新增</a-button>
             </p>
-            <a-table :columns="columns" :row-key="record => record.id" :data-source="categorys" :pagination="pagination"
-                @change="handleTableChange">
+            <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :pagination="false">
                 <template #headerCell="{ column }">
                     <template v-if="column.key === 'name'">
                         <span>
@@ -43,7 +43,8 @@
 
     <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="分类表单" @ok="handleOk" okText="确定"
         cancelText="取消">
-        <a-form :model="categoryOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off">
+        <a-form :model="categoryOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }"
+            autocomplete="off">
 
             <a-form-item label="名称" name="name">
                 <a-input v-model:value="categoryOne.name" />
@@ -65,7 +66,7 @@ import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 import type { SizeType } from 'ant-design-vue/es/config-provider';
 import { message } from 'ant-design-vue';
-import {Tool} from '@/util/tool'
+import { Tool } from '@/util/tool'
 
 export default defineComponent({
     name: 'AdminCategorys',
@@ -73,11 +74,7 @@ export default defineComponent({
         const size = ref<SizeType>('large');
         const categorys = ref();
         const queryName = ref();
-        const pagination = ref({
-            current: 1,
-            pageSize: 10,
-            total: 0
-        })
+
         const loading = ref(false);
         const open = ref<boolean>(false);
         const confirmLoading = ref<boolean>(false);
@@ -98,7 +95,7 @@ export default defineComponent({
                 dataIndex: 'parent',
             },
             {
-                title: 'Action',
+                title: '按钮',
                 key: 'action',
             },
         ]
@@ -106,22 +103,20 @@ export default defineComponent({
         /**
          * 数据查询
          */
-        const handleQuery = (params: any) => {
+        const level1 = ref();
+
+        const handleQuery = () => {
             loading.value = true
-            axios.get('/category/lists', {
-                params: {
-                    page: params.page,
-                    size: params.size
-                }
-            }).then((response) => {
+            axios.get('/category/allData').then((response) => {
+
                 loading.value = false;
                 const data = response.data
                 if (data.success) {
-                    categorys.value = data.content.list
-
-                    //重置分页
-                    pagination.value.current = params.page;
-                    pagination.value.total = data.content.total;
+                    categorys.value = data.content
+                    console.log("原始数组", categorys.value);
+                    level1.value = [];
+                    level1.value = Tool.array2Tree(categorys.value, 0);
+                    console.log("递归后数组", level1.value);
                 } else {
                     message.error(data.message);
                 }
@@ -130,22 +125,9 @@ export default defineComponent({
         }
 
         onMounted(() => {
-            handleQuery({
-                page: 1,
-                size: pagination.value.pageSize
-            });
+            handleQuery();
         })
 
-        /**
-         * 表格低级页码时触发
-         */
-        const handleTableChange = (pagination: any) => {
-            console.log('看看自带的分页参数都有啥', pagination);
-            handleQuery({
-                page: pagination.current,
-                size: pagination.pageSize
-            });
-        }
 
         /**
          * 编辑
@@ -166,11 +148,7 @@ export default defineComponent({
                     confirmLoading.value = false;
 
                     //重新加载列表
-                    handleQuery({
-                        //重新查询当前页面的所有数据
-                        page: pagination.value.current,
-                        size: pagination.value.pageSize
-                    });
+                    handleQuery();
                 } else {
                     message.error(data.message);
                 }
@@ -191,34 +169,20 @@ export default defineComponent({
                 if (data.success) {
 
                     //重新加载列表
-                    handleQuery({
-                        //重新查询当前页面的所有数据
-                        page: pagination.value.current,
-                        size: pagination.value.pageSize
-                    });
+                    handleQuery();
                 }
 
             })
         }
 
         /**查询单本分类 */
-        const handleQuerycategoryName = (queryName:any) => {
+        const handleQuerycategoryName = () => {
             loading.value = true
-            axios.get('/category/lists', {
-               params: {
-                page:1,
-                size: pagination.value.pageSize,
-                name:queryName
-               }
-            }).then((response) => {
+            axios.get('/category/allData').then((response) => {
                 loading.value = false;
                 const data = response.data
                 if (data.success) {
                     categorys.value = data.content.list
-
-                    //重置分页
-                    // pagination.value.current = params.page;
-                    // pagination.value.total = data.content.total;
                 } else {
                     message.error(data.message);
                 }
@@ -228,20 +192,19 @@ export default defineComponent({
 
         return {
             size,
-            categorys,
+            // categorys,
             columns,
-            pagination,
             loading,
             open,
             confirmLoading,
             categoryOne,
-            handleTableChange,
             edit,
             handleOk,
             add,
             handleDelete,
             queryName,
-            handleQuerycategoryName
+            handleQuerycategoryName,
+            level1
         }
     }
 })
