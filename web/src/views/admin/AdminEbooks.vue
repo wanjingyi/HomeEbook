@@ -190,6 +190,7 @@ export default defineComponent({
             confirmLoading.value = true;
             axios.post('/ebook/save', ebookOne.value).then((response) => {
                 const data = response.data
+                confirmLoading.value = false;
                 if (data.success) {
                     open.value = false;
                     confirmLoading.value = false;
@@ -200,6 +201,8 @@ export default defineComponent({
                         page: pagination.value.current,
                         size: pagination.value.pageSize
                     });
+                }else {
+                    message.error(data.message);
                 }
 
             })

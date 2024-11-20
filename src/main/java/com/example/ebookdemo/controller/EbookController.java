@@ -30,7 +30,7 @@ public class EbookController {
     }
     
     @PostMapping("/save")
-    public CommonResp saveEbook(@RequestBody EbookSaveReq ebook) {
+    public CommonResp saveEbook(@RequestBody @Valid EbookSaveReq ebook) {
         CommonResp results = new CommonResp<>();
         ebookService.saveEbook(ebook);
         results.setMessage("数据保存成功");
