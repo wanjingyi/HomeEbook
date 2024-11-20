@@ -1759,7 +1759,7 @@ Unconditional classes:
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd74864]
-"2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.resp.EbookResp] because it is not cache-safe
+"2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.resp.EbookQueryResp] because it is not cache-safe
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.domain.Ebook] because it is not cache-safe
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 "2024-11-17 13:55:17 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@6d87d83f]
@@ -4070,7 +4070,7 @@ Unconditional classes:
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : ==> Parameters: 
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] com.example.ebookdemo.mapper.EbookMapper.selectByExample : <==      Total: 10
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49df9b2e]
-"2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.resp.EbookResp] because it is not cache-safe
+"2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.resp.EbookQueryResp] because it is not cache-safe
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.springframework.beans.CachedIntrospectionResults : Not strongly caching class [com.example.ebookdemo.domain.Ebook] because it is not cache-safe
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 "2024-11-17 14:58:44 DEBUG --- [http-nio-8081-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@1e541dd9]

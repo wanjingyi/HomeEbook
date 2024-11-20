@@ -1,2 +1,2 @@
-2024-11-19 22:08:49 WARN --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m50s424ms681µs400ns).
+2024-11-20 13:16:25 WARN --- [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\practive_project\testPractice\EbookDemo\target\classes\com\example\ebookdemo\controller\EbookController.class]: Post-processing of merged bean definition failed
 "

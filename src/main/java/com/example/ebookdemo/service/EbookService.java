@@ -3,8 +3,9 @@ package com.example.ebookdemo.service;
 import com.example.ebookdemo.domain.Ebook;
 import com.example.ebookdemo.domain.EbookExample;
 import com.example.ebookdemo.mapper.EbookMapper;
-import com.example.ebookdemo.req.EbookReq;
-import com.example.ebookdemo.resp.EbookResp;
+import com.example.ebookdemo.req.EbookQueryReq;
+import com.example.ebookdemo.req.EbookSaveReq;
+import com.example.ebookdemo.resp.EbookQueryResp;
 import com.example.ebookdemo.resp.PageResp;
 import com.example.ebookdemo.util.CopyUtil;
 import com.github.pagehelper.PageHelper;
@@ -23,7 +24,7 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public PageResp<EbookResp> allLists (EbookReq req) {
+    public PageResp<EbookQueryResp> allLists (EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -42,14 +43,25 @@ public class EbookService {
 
 
         //列表复制
-        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
 
-        PageResp<EbookResp> pageResp = new PageResp<>();
+        PageResp<EbookQueryResp> pageResp = new PageResp<>();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         LOG.info("list: {}",list);
         LOG.info("数据: {}",pageResp);
 
         return pageResp;
+    }
+
+    public void saveEbook(EbookSaveReq ebookSaveReq) {
+        Ebook ebook = CopyUtil.copy(ebookSaveReq, Ebook.class);
+        if (ObjectUtils.isEmpty(ebookSaveReq.getId())) {
+            //新增
+            ebookMapper.insert(ebook);
+        }else {
+            //更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 }

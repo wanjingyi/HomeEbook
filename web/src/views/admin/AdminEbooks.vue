@@ -32,9 +32,8 @@
         </a-layout-content>
     </a-layout>
 
-    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk">
-        <a-form :model="ebookOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off"
-            @finish="onFinish" @finishFailed="onFinishFailed">
+    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="电子书表单" @ok="handleOk" okText="确定" cancelText="取消">
+        <a-form :model="ebookOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }" autocomplete="off" >
             <a-form-item label="封面" name="cover">
                 <a-input v-model:value="ebookOne.cover" />
             </a-form-item>
@@ -53,11 +52,6 @@
 
             <a-form-item label="描述" name="description">
                 <a-input v-model:value="ebookOne.description" />
-            </a-form-item>
-
-
-            <a-form-item :wrapper-col="{ offset: 8, span: 16 }">
-                <a-button type="primary" html-type="submit">提交</a-button>
             </a-form-item>
         </a-form>
     </a-modal>
@@ -171,27 +165,30 @@ export default defineComponent({
          * 编辑
          */
         const ebookOne = ref();
-        const edit = (record:any) => {
+        const edit = (record: any) => {
             open.value = true;
             ebookOne.value = record;
         }
 
         const handleOk = () => {
-            // open.value = false;
             confirmLoading.value = true;
-            setTimeout(() => {
-                open.value = false;
-                confirmLoading.value = false;
-            }, 2000);
+            axios.post('/ebook/save', ebookOne.value).then((response) => {
+                const data = response.data
+                if (data.success) {
+                    open.value = false;
+                    confirmLoading.value = false;
+
+                    //重新加载列表
+                    handleQuery({
+                        //重新查询当前页面的所有数据
+                        page: pagination.value.current,
+                        size: pagination.value.pageSize
+                    });
+                }
+
+            })
         }
 
-        const onFinish = (values: any) => {
-            console.log('Success:', values);
-        };
-
-        const onFinishFailed = (errorInfo: any) => {
-            console.log('Failed:', errorInfo);
-        };
 
         return {
             ebooks,
@@ -204,8 +201,6 @@ export default defineComponent({
             handleTableChange,
             edit,
             handleOk,
-            onFinish,
-            onFinishFailed
         }
     }
 })
