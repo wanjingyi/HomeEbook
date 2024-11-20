@@ -27766,4 +27766,40 @@ Unconditional classes:
 "2024-11-20 16:34:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "2024-11-20 16:34:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
 "2024-11-20 16:34:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:35:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:35:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:35:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:35:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:36:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:36:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:36:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:36:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:37:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:37:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:37:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:37:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:38:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:38:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:38:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:38:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:39:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:39:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.DispatcherServlet : GET "/ebook/lists?page=1&size=10", parameters={masked}
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : Mapped to com.example.ebookdemo.controller.EbookController#allList(EbookQueryReq)
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.jdbc.datasource.DataSourceUtils : Fetching JDBC Connection from DataSource
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor : Writing [com.example.ebookdemo.resp.CommonResp@408a4a06]
+"2024-11-20 16:39:22 DEBUG --- [http-nio-8081-exec-9] org.springframework.web.servlet.DispatcherServlet : Completed 200 OK
+"2024-11-20 16:39:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:39:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:40:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:40:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:40:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:40:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:41:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:41:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:41:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:41:38 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+"2024-11-20 16:42:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+"2024-11-20 16:42:08 DEBUG --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 "

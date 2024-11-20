@@ -47,4 +47,38 @@ insert into `ebook` (id,name,description) values (10,'白夜行','侦探类小�
 
 select * from ebook;
 
+#分类
+drop table if exists `category`;
+create table `category`
+(
+    `id`   bigInt unsigned NOT NULL comment 'id',
+    `parent` bigint not null default 0 comment '父id',
+    `name` varchar(255) NOT NULL comment '名称',
+    `sort` int comment '顺序',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment '分类';
+
+insert into `category` (id, parent, name, sort) values (100, 000, '前端开发', 100);
+insert into `category` (id, parent, name, sort) values (101, 100, 'JavaScript', 100);
+insert into `category` (id, parent, name, sort) values (102, 100, 'Vue', 200);
+insert into `category` (id, parent, name, sort) values (103, 100, 'React', 300);
+insert into `category` (id, parent, name, sort) values (200, 000, '后端开发', 200);
+insert into `category` (id, parent, name, sort) values (201, 200, 'Java', 100);
+insert into `category` (id, parent, name, sort) values (202, 200, 'Python', 200);
+insert into `category` (id, parent, name, sort) values (203, 200, 'Go', 300);
+insert into `category` (id, parent, name, sort) values (300, 000, '数据库', 300);
+insert into `category` (id, parent, name, sort) values (301, 300, 'MySQL', 100);
+insert into `category` (id, parent, name, sort) values (302, 300, 'PostgreSQL', 200);
+insert into `category` (id, parent, name, sort) values (303, 300, 'MongoDB', 300);
+insert into `category` (id, parent, name, sort) values (400, 000, '运维', 400);
+insert into `category` (id, parent, name, sort) values (401, 400, 'Linux', 100);
+insert into `category` (id, parent, name, sort) values (402, 400, 'Windows', 200);
+insert into `category` (id, parent, name, sort) values (403, 400, 'Docker', 300);
+insert into `category` (id, parent, name, sort) values (500, 000, '其他', 500);
+insert into `category` (id, parent, name, sort) values (501, 500, '其他', 100);
+insert into `category` (id, parent, name, sort) values (502, 500, '其他', 200);
+insert into `category` (id, parent, name, sort) values (503, 500, '其他', 300);
+
+select * from category;
+
 
