@@ -1,6 +1,9 @@
 <template>
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
+            <p>
+                <a-button @click="add" type="primary" ghost :size="size">新增</a-button>
+            </p>
             <a-table :columns="columns" :row-key="record => record.id" :data-source="ebooks" :pagination="pagination"
                 @change="handleTableChange">
                 <template #headerCell="{ column }">
@@ -60,10 +63,12 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
+import type { SizeType } from 'ant-design-vue/es/config-provider';
 
 export default defineComponent({
     name: 'AdminEbooks',
     setup() {
+        const size = ref<SizeType>('large');
         const ebooks = ref();
         const pagination = ref({
             current: 1,
@@ -189,8 +194,16 @@ export default defineComponent({
             })
         }
 
+        /**新增 */
+        const add = () => {
+            open.value = true;
+            ebookOne.value = {};
+
+        }
+
 
         return {
+            size,
             ebooks,
             columns,
             pagination,
@@ -201,6 +214,7 @@ export default defineComponent({
             handleTableChange,
             edit,
             handleOk,
+            add
         }
     }
 })
