@@ -1,7 +1,7 @@
 <template>
   <a-layout>
-    <a-layout-sider width="200" style="background: #fff" @click="handleClick">
-      <a-menu  v-model:openKeys="openKeys" mode="inline"
+    <a-layout-sider width="200" style="background: #fff">
+      <a-menu  v-model:openKeys="openKeys" mode="inline"  @click="handleClick"
         :style="{ height: '100%', borderRight: 0 }">
         <a-menu-item key="welcome">
           <MailOutlined />
@@ -20,7 +20,10 @@
 
     </a-layout-sider>
     <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
-      <a-list item-layout="vertical" size="large" :data-source="ebooks" :grid="{ gutter: 20, column: 3 }">
+      <div class="welcome" v-show="show_welcome">
+        <h1>欢迎小狗水上漂</h1>
+      </div>
+      <a-list item-layout="vertical" size="large" :data-source="ebooks" :grid="{ gutter: 20, column: 3 }" v-show="!show_welcome">
         <template #renderItem="{ item }">
           <a-list-item key="item.name">
             <template #actions>
@@ -62,6 +65,7 @@ export default defineComponent({
   setup() {
     const ebooks: any = ref();
     const openKeys = ref<string[]>([]);
+    const show_welcome = ref(true);
 
     onMounted(() => {
       axios.get('/ebook/lists', {
@@ -96,8 +100,13 @@ export default defineComponent({
       })
     }
 
-    const handleClick = () => {
-      console.log("menu click");
+    const handleClick = (value:any) => {
+      console.log("menu click",value);
+      if (value.key === 'welcome') {
+        show_welcome.value = true
+      }else {
+        show_welcome.value = false
+      }
     }
 
     return {
@@ -106,7 +115,8 @@ export default defineComponent({
       handleQueryCategory,
       level1,
       openKeys,
-      handleClick
+      handleClick,
+      show_welcome
     }
   }
 });
