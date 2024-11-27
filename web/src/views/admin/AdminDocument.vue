@@ -2,12 +2,13 @@
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
             <a-row :gutter="24">
-                <a-col :xs="10">
+                <a-col :span="12">
                     <p>
                         <a-button type="primary" ghost :size="size" @click="handleQuerydocumentName">查询</a-button>
-                        <a-button @click="add" type="primary" ghost :size="size" style="margin-left: 20px;">新增</a-button>
+                        <a-button @click="add" type="primary" ghost :size="size"
+                            style="margin-left: 20px;">新增</a-button>
                     </p>
-                    <a-table :columns="columns" :row-key="record => record.id" :data-source="level1"
+                    <a-table v-if="level1.length > 0" :columns="columns" :row-key="record => record.id" :data-source="level1"  :defaultExpandAllRows="true"
                         :pagination="false">
                         <template #headerCell="{ column }">
                             <template v-if="column.key === 'name'">
@@ -29,10 +30,10 @@
                             </template>
                             <template v-else-if="column.key === 'action'">
                                 <a-space>
-                                    <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
+                                    <a-button type="primary" ghost @click="edit(record)" size="small">编辑</a-button>
                                     <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
                                         @confirm="handleDelete(record.id)">
-                                        <a-button type="primary" danger ghost>删除</a-button>
+                                        <a-button type="primary" danger ghost size="small">删除</a-button>
                                     </a-popconfirm>
                                 </a-space>
                             </template>
@@ -40,12 +41,14 @@
                     </a-table>
 
                 </a-col>
-                <a-col :xs="14">
-                    <a-form :model="documentOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }"
+                <a-col :span="12">
+                    <a-form :model="documentOne" name="basic" :label-col="{ span: 4 }" :wrapper-col="{ span: 20 }"
                         autocomplete="off">
-
+                        <a-form-item style="margin-left: 50px;">
+                            <a-button type="primary" ghost @click="handleOk()">保存</a-button>
+                        </a-form-item>
                         <a-form-item label="名称" name="name">
-                            <a-input v-model:value="documentOne.name" />
+                            <a-input v-model:value="documentOne.name" placeholder="名称" />
                         </a-form-item>
 
                         <a-form-item label="父文档" name="name">
@@ -57,7 +60,7 @@
                         </a-form-item>
 
                         <a-form-item label="顺序" name="sort">
-                            <a-input v-model:value="documentOne.sort" />
+                            <a-input v-model:value="documentOne.sort" placeholder="顺序" />
                         </a-form-item>
 
                         <a-form-item label="内容">
@@ -98,23 +101,14 @@ export default defineComponent({
         treeSelectData.value = [];
 
         const loading = ref(false);
-        const open = ref<boolean>(false);
+        // const open = ref<boolean>(false);
         const confirmLoading = ref<boolean>(false);
         const columns = [
             {
                 name: '名称',
                 key: 'name',
+                width: '70%',
                 dataIndex: 'name',
-            },
-            {
-                title: '排序',
-                key: 'sort',
-                dataIndex: 'sort'
-            },
-            {
-                title: '父文档',
-                key: 'parent',
-                dataIndex: 'parent',
             },
             {
                 title: '按钮',
@@ -123,9 +117,10 @@ export default defineComponent({
         ]
 
         const editor = new E("#content")
-        
+        editor.config.zIndex = 0;
 
         const level1 = ref();
+        level1.value = [];
 
         const documentOne = ref();
         documentOne.value = {
@@ -165,7 +160,7 @@ export default defineComponent({
          */
         const edit = (record: any) => {
 
-            open.value = true;
+            // open.value = true;
 
             documentOne.value = Tool.copy(record);
 
@@ -183,7 +178,7 @@ export default defineComponent({
                 const data = response.data
                 confirmLoading.value = false;
                 if (data.success) {
-                    open.value = false;
+                    // open.value = false;
                     confirmLoading.value = false;
 
                     //重新加载列表
@@ -197,7 +192,7 @@ export default defineComponent({
 
         /**新增 */
         const add = () => {
-            open.value = true;
+            // open.value = true;
 
             documentOne.value = {
                 ebookId: route.query.ebookId
