@@ -81,4 +81,25 @@ insert into `category` (id, parent, name, sort) values (503, 500, '其他', 300)
 
 select * from category;
 
+# 文档表的设计
+drop table if exists `document`;
+create table `document`
+(
+    `id`   bigInt unsigned NOT NULL comment 'id',
+    `ebook_id` bigint NOT NULL default 0 comment '电子书id',
+    `parent` bigint NOT NULL default 0 comment '父ID',
+    `name` varchar(50) NOT NULL  comment '名称',
+    `sort` int comment '顺序',
+    `view_count` int default 0 comment '阅读数',
+    `vote_count` int default 0 comment '点赞数',
+    `comment_count` int default 0 comment '评论数',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment '文档';
+
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (1,1,0,'文档1',1,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (2,1,1,'示例1',1,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (3,1,2,'示例2',2,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (4,1,3,'文档2.1',1,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (5,1,3,'示例2.2',2,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (6,1,5,'文档2.2.1',1,0,0);
 
