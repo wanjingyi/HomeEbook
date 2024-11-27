@@ -98,7 +98,7 @@ create table `document`
 
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (1,1,0,'文档1',1,0,0);
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (2,1,1,'示例1',1,0,0);
-insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (3,1,2,'示例2',2,0,0);
+insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (3,1,0,'文档2',2,0,0);
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (4,1,3,'文档2.1',1,0,0);
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (5,1,3,'示例2.2',2,0,0);
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (6,1,5,'文档2.2.1',1,0,0);

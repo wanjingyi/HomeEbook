@@ -29,6 +29,9 @@
                     </template>
                     <template v-else-if="column.key === 'action'">
                         <a-space>
+                            <router-link to="/admin/document">
+                                <a-button type="primary" ghost @click="edit(record)">文档管理</a-button>
+                            </router-link>
                             <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
                             <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
                                 @confirm="handleDelete(record.id)">
