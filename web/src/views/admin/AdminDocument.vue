@@ -27,7 +27,6 @@
                     <template v-else-if="column.key === 'action'">
                         <a-space>
                             <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
-                            <!-- <a-button type="primary" danger ghost @click="handleDelete(record.id)">删除</a-button> -->
                             <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
                                 @confirm="handleDelete(record.id)">
                                 <a-button type="primary" danger ghost>删除</a-button>
@@ -60,13 +59,10 @@
                 <a-input v-model:value="documentOne.sort" />
             </a-form-item>
 
-            <!-- <a-form-item label="父文档" name="parent">
-                <a-select ref="select" v-model:value="documentOne.parent">
-                    <a-select-option value="0">无</a-select-option>
-                    <a-select-option v-for="c in level1" :key="c.id" :value="c.id"
-                        :disabled="documentOne.id === c.id">{{ c.name }}</a-select-option>
-                </a-select>
-            </a-form-item> -->
+            <a-form-item label="内容">
+                <div id="content"></div>
+            </a-form-item>
+
         </a-form>
     </a-modal>
 </template>
@@ -75,9 +71,10 @@
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 import type { SizeType } from 'ant-design-vue/es/config-provider';
-import { message } from 'ant-design-vue';
+import { message, Modal } from 'ant-design-vue';
 import { Tool } from '@/util/tool'
 import { useRoute } from 'vue-router';
+import E from 'wangeditor'
 
 export default defineComponent({
     name: 'AdminDocuments',
@@ -121,6 +118,8 @@ export default defineComponent({
             },
         ]
 
+        const editor = new E("#content")
+
         /**
          * 数据查询
          */
@@ -153,7 +152,9 @@ export default defineComponent({
          */
         const documentOne = ref();
         const edit = (record: any) => {
+
             open.value = true;
+
             documentOne.value = Tool.copy(record);
 
             treeSelectData.value = Tool.copy(level1.value);
@@ -161,6 +162,11 @@ export default defineComponent({
 
             //为选择树添加一个"无"
             treeSelectData.value.unshift({ id: 0, name: '无' });
+            setTimeout(function () {
+                editor.create()
+
+            },100);
+
         }
 
         //因为树选择组件的属性状态，会随着当前编辑的节点而变化，所以单独声明一个响应式变量
@@ -193,12 +199,18 @@ export default defineComponent({
 
             //为选择树添加一个"无"
             treeSelectData.value.unshift({ id: 0, name: '无' });
+            setTimeout(function () {
+                editor.create()
+
+            },100);
+
         }
 
         /**
         * 查找整根树枝
         */
-        const ids:Array<string> = []
+        const ids: Array<string> = []
+        const idsName: Array<string> = []
         const deleteAllChildren = (treeSelectData: any, id: any) => {
             // 遍历数组，即遍历某一层节点
             for (let i = 0; i < treeSelectData.length; i++) {
@@ -210,6 +222,7 @@ export default defineComponent({
                     // node.disabled = true;
                     //将目标ID放入结果集
                     ids.push(node.id);
+                    idsName.push(node.name);
                     // 遍历所有子节点
                     const children = node.children;
                     if (Tool.isNotEmpty(children)) {
@@ -227,18 +240,30 @@ export default defineComponent({
             }
         };
 
+
         /**删除 */
         const handleDelete = (id: number) => {
-            deleteAllChildren(level1.value,id);
-            axios.delete('/document/delete/' + ids.join(',')).then((response) => {
-                const data = response.data
-                if (data.success) {
+            ids.length = 0;
+            idsName.length = 0;
+            deleteAllChildren(level1.value, id);
+            Modal.confirm({
+                title: '重要提示',
+                content: '将删除：【' + idsName.join(',') + '】删除后不可恢复，确认删除吗？',
+                onOk() {
+                    axios.delete('/document/delete/' + ids.join(',')).then((response) => {
+                        const data = response.data
+                        if (data.success) {
 
-                    //重新加载列表
-                    handleQuery();
+                            //重新加载列表
+                            handleQuery();
+                        } else {
+                            message.error(data.message);
+                        }
+
+                    })
                 }
+            });
 
-            })
         }
 
 
@@ -293,6 +318,7 @@ export default defineComponent({
         };
 
         onMounted(() => {
+
             handleQuery();
         })
 

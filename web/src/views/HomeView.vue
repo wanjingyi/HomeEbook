@@ -4,7 +4,6 @@
       <a-menu  v-model:openKeys="openKeys" mode="inline"  @click="handleClick"
         :style="{ height: '100%', borderRight: 0 }">
         <a-menu-item key="welcome">
-          <MailOutlined />
           <span>欢迎</span>
         </a-menu-item>
         <a-sub-menu v-for="item in level1" :key="item.id">
