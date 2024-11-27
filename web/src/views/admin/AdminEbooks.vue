@@ -127,10 +127,6 @@ export default defineComponent({
         ]
 
         onMounted(() => {
-            handleQuery({
-                page: 1,
-                size: pagination.value.pageSize
-            });
             handleQueryCategory();
         })
 
@@ -149,7 +145,7 @@ export default defineComponent({
                 const data = response.data
                 if (data.success) {
                     ebooks.value = data.content.list
-                    console.log(ebooks.value,'ebooks');
+                    console.log(ebooks.value, 'ebooks');
 
                     //重置分页
                     pagination.value.current = params.page;
@@ -273,6 +269,11 @@ export default defineComponent({
                     level1.value = [];
                     level1.value = Tool.array2Tree(categorys, 0);
                     console.log("递归后数组", level1.value);
+
+                    handleQuery({
+                        page: 1,
+                        size: pagination.value.pageSize
+                    });
                 } else {
                     message.error(data.message);
                 }
