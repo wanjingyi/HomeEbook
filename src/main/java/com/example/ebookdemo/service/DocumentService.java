@@ -75,6 +75,14 @@ public class DocumentService {
         documentMapper.deleteByPrimaryKey(id);
     }
 
+    public void delete (List<String> ids) {
+//        documentMapper.deleteByPrimaryKey(ids);
+        DocumentExample documentExample = new DocumentExample();
+        DocumentExample.Criteria criteria = documentExample.createCriteria();
+        criteria.andIdIn(ids);
+        documentMapper.deleteByExample(documentExample);
+    }
+
     public List<DocumentQueryResp> allData () {
         DocumentExample documentExample = new DocumentExample();
         documentExample.setOrderByClause("sort asc");

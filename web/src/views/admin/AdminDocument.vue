@@ -157,10 +157,10 @@ export default defineComponent({
             documentOne.value = Tool.copy(record);
 
             treeSelectData.value = Tool.copy(level1.value);
-            setDisable(treeSelectData.value,record.id);
+            setDisable(treeSelectData.value, record.id);
 
             //为选择树添加一个"无"
-            treeSelectData.value.unshift({id:0,name:'无'});
+            treeSelectData.value.unshift({ id: 0, name: '无' });
         }
 
         //因为树选择组件的属性状态，会随着当前编辑的节点而变化，所以单独声明一个响应式变量
@@ -186,18 +186,51 @@ export default defineComponent({
         const add = () => {
             open.value = true;
             documentOne.value = {
-                ebookId:route.query.ebookId
+                ebookId: route.query.ebookId
             };
 
             treeSelectData.value = Tool.copy(level1.value);
 
             //为选择树添加一个"无"
-            treeSelectData.value.unshift({id:0,name:'无'});
+            treeSelectData.value.unshift({ id: 0, name: '无' });
         }
+
+        /**
+        * 查找整根树枝
+        */
+        const ids:Array<string> = []
+        const deleteAllChildren = (treeSelectData: any, id: any) => {
+            // 遍历数组，即遍历某一层节点
+            for (let i = 0; i < treeSelectData.length; i++) {
+                const node = treeSelectData[i];
+                if (node.id === id) {
+                    // 如果当前节点就是目标节点
+                    // console.log("disabled", node);
+                    // 将目标节点设置为disabled
+                    // node.disabled = true;
+                    //将目标ID放入结果集
+                    ids.push(node.id);
+                    // 遍历所有子节点
+                    const children = node.children;
+                    if (Tool.isNotEmpty(children)) {
+                        for (let j = 0; j < children.length; j++) {
+                            deleteAllChildren(children, children[j].id)
+                        }
+                    }
+                } else {
+                    // 如果当前节点不是目标节点，则到其子节点再找找看。
+                    const children = node.children;
+                    if (Tool.isNotEmpty(children)) {
+                        deleteAllChildren(children, id);
+                    }
+                }
+            }
+        };
 
         /**删除 */
         const handleDelete = (id: number) => {
-            axios.delete('/document/delete/' + id).then((response) => {
+            deleteAllChildren(level1.value,id);
+            axios.delete('/document/delete/' + ids.join(',')).then((response) => {
                 const data = response.data
                 if (data.success) {
 
@@ -207,6 +240,8 @@ export default defineComponent({
 
             })
         }
+
+
 
         /**查询单文档 */
         const handleQuerydocumentName = () => {
@@ -227,35 +262,35 @@ export default defineComponent({
             })
         }
 
-              /**
-       * 将某节点及其子孙节点全部置为disabled
-       */
-      const setDisable = (treeSelectData: any, id: any) => {
-        // 遍历数组，即遍历某一层节点
-        for (let i = 0; i < treeSelectData.length; i++) {
-          const node = treeSelectData[i];
-          if (node.id === id) {
-            // 如果当前节点就是目标节点
-            // console.log("disabled", node);
-            // 将目标节点设置为disabled
-            node.disabled = true;
+        /**
+ * 将某节点及其子孙节点全部置为disabled
+ */
+        const setDisable = (treeSelectData: any, id: any) => {
+            // 遍历数组，即遍历某一层节点
+            for (let i = 0; i < treeSelectData.length; i++) {
+                const node = treeSelectData[i];
+                if (node.id === id) {
+                    // 如果当前节点就是目标节点
+                    // console.log("disabled", node);
+                    // 将目标节点设置为disabled
+                    node.disabled = true;
 
-            // 遍历所有子节点，将所有子节点全部都加上disabled
-            const children = node.children;
-            if (Tool.isNotEmpty(children)) {
-              for (let j = 0; j < children.length; j++) {
-                setDisable(children, children[j].id)
-              }
+                    // 遍历所有子节点，将所有子节点全部都加上disabled
+                    const children = node.children;
+                    if (Tool.isNotEmpty(children)) {
+                        for (let j = 0; j < children.length; j++) {
+                            setDisable(children, children[j].id)
+                        }
+                    }
+                } else {
+                    // 如果当前节点不是目标节点，则到其子节点再找找看。
+                    const children = node.children;
+                    if (Tool.isNotEmpty(children)) {
+                        setDisable(children, id);
+                    }
+                }
             }
-          } else {
-            // 如果当前节点不是目标节点，则到其子节点再找找看。
-            const children = node.children;
-            if (Tool.isNotEmpty(children)) {
-              setDisable(children, id);
-            }
-          }
-        }
-      };
+        };
 
         onMounted(() => {
             handleQuery();
