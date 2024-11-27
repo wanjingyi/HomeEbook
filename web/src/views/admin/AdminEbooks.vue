@@ -19,9 +19,7 @@
 
                 <template #bodyCell="{ column, record }">
                     <template v-if="column.key === 'name'">
-                        <a>
-                            {{ record.name }}
-                        </a>
+                        <span>{{ record.name }}</span>
                     </template>
                     <template v-else-if="column.dataIndex === 'category'">
                         <span>{{ getCategoryName(record.category1Id) }}/{{ getCategoryName(record.category2Id) }}</span>
@@ -96,7 +94,6 @@ export default defineComponent({
                 title: '分类',
                 key: 'category',
                 dataIndex: 'category',
-                // slots: { customRender: 'category' }
             },
             {
                 title: '封面',
