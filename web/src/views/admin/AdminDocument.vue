@@ -88,21 +88,11 @@ export default defineComponent({
     setup() {
         //接收路由的参数
         const route = useRoute();
-        // console.log("route.path",route.path);
-        // console.log("route.query",route.query);
-        // console.log("route.params",route.params);
-        // console.log("route.fullPath",route.fullPath);
-        // console.log("route.name",route.name);
-        // console.log("route.meta",route.meta);
         const size = ref<SizeType>('large');
         const documents = ref();
         const queryName = ref();
         const treeSelectData = ref();
         treeSelectData.value = [];
-
-        const loading = ref(false);
-        // const open = ref<boolean>(false);
-        const confirmLoading = ref<boolean>(false);
         const columns = [
             {
                 name: '名称',
@@ -134,11 +124,8 @@ export default defineComponent({
          */
 
         const handleQuery = () => {
-            loading.value = true
             level1.value = [];
             axios.get('/document/allData').then((response) => {
-
-                loading.value = false;
                 const data = response.data
                 if (data.success) {
                     documents.value = data.content
@@ -153,6 +140,22 @@ export default defineComponent({
             })
         }
 
+        /**
+         * 富文本查询
+         */
+
+         const handleQueryContent = () => {
+            axios.get('/document/findContent/'+ documentOne.value.id).then((response) => {
+                const data = response.data
+                if (data.success) {
+                    editor.txt.html(data.content);
+                } else {
+                    message.error(data.message);
+                }
+
+            })
+        }
+
 
 
         /**
@@ -160,24 +163,20 @@ export default defineComponent({
          */
         const edit = (record: any) => {
             documentOne.value = Tool.copy(record);
+            handleQueryContent();
 
             treeSelectData.value = Tool.copy(level1.value);
             setDisable(treeSelectData.value, record.id);
-
             //为选择树添加一个"无"
             treeSelectData.value.unshift({ id: 0, name: '无' });
         }
 
         //因为树选择组件的属性状态，会随着当前编辑的节点而变化，所以单独声明一个响应式变量
         const handleOk = () => {
-            confirmLoading.value = true;
             documentOne.value.content = editor.txt.html();
             axios.post('/document/save', documentOne.value).then((response) => {
                 const data = response.data
-                confirmLoading.value = false;
                 if (data.success) {
-                    // open.value = false;
-                    confirmLoading.value = false;
 
                     //重新加载列表
                     handleQuery();
@@ -267,9 +266,7 @@ export default defineComponent({
 
         /**查询单文档 */
         const handleQuerydocumentName = () => {
-            loading.value = true
             axios.get('/document/allData').then((response) => {
-                loading.value = false;
                 const data = response.data
                 if (data.success) {
                     documents.value = data.content
@@ -326,9 +323,7 @@ export default defineComponent({
             size,
             // documents,
             columns,
-            loading,
             open,
-            confirmLoading,
             documentOne,
             edit,
             handleOk,

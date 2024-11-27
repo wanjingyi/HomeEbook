@@ -1,6 +1,7 @@
 package com.example.ebookdemo.controller;
 
 
+import com.example.ebookdemo.domain.Content;
 import com.example.ebookdemo.req.DocumentQueryReq;
 import com.example.ebookdemo.req.DocumentSaveReq;
 import com.example.ebookdemo.resp.CommonResp;
@@ -57,6 +58,15 @@ public class DocumentController {
         List<DocumentQueryResp> documentList = documentService.allData();
         results.setContent(documentList);
         LOG.info("数据Controller: {}",documentList);
+        return results;
+    }
+
+    @GetMapping("/findContent/{id}")
+    public CommonResp findContent(@PathVariable Long id) {
+        CommonResp<String> results = new CommonResp<>();
+       String content = documentService.findContent(id);
+        results.setContent(content);
+        LOG.info("数据Controller: {}",content);
         return results;
     }
 }
