@@ -1,70 +1,74 @@
 <template>
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
-            <p>
-                <a-button type="primary" ghost :size="size" @click="handleQuerydocumentName">查询</a-button>
-                <a-button @click="add" type="primary" ghost :size="size">新增</a-button>
-            </p>
-            <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :pagination="false">
-                <template #headerCell="{ column }">
-                    <template v-if="column.key === 'name'">
-                        <span>
-                            <smile-outlined />
-                            名称
-                        </span>
-                    </template>
-                </template>
+            <a-row :gutter="24">
+                <a-col :xs="10">
+                    <p>
+                        <a-button type="primary" ghost :size="size" @click="handleQuerydocumentName">查询</a-button>
+                        <a-button @click="add" type="primary" ghost :size="size" style="margin-left: 20px;">新增</a-button>
+                    </p>
+                    <a-table :columns="columns" :row-key="record => record.id" :data-source="level1"
+                        :pagination="false">
+                        <template #headerCell="{ column }">
+                            <template v-if="column.key === 'name'">
+                                <span>
+                                    <smile-outlined />
+                                    名称
+                                </span>
+                            </template>
+                        </template>
 
-                <template #bodyCell="{ column, record }">
-                    <template v-if="column.key === 'name'">
-                        <a>
-                            {{ record.name }}
-                        </a>
-                    </template>
-                    <template v-else-if="column.key === 'cover'">
-                        <a-avatar :src="record.cover" />
-                    </template>
-                    <template v-else-if="column.key === 'action'">
-                        <a-space>
-                            <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
-                            <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
-                                @confirm="handleDelete(record.id)">
-                                <a-button type="primary" danger ghost>删除</a-button>
-                            </a-popconfirm>
-                        </a-space>
-                    </template>
-                </template>
-            </a-table>
+                        <template #bodyCell="{ column, record }">
+                            <template v-if="column.key === 'name'">
+                                <a>
+                                    {{ record.name }}
+                                </a>
+                            </template>
+                            <template v-else-if="column.key === 'cover'">
+                                <a-avatar :src="record.cover" />
+                            </template>
+                            <template v-else-if="column.key === 'action'">
+                                <a-space>
+                                    <a-button type="primary" ghost @click="edit(record)">编辑</a-button>
+                                    <a-popconfirm title="确定要删除吗?" ok-text="是" cancel-text="否"
+                                        @confirm="handleDelete(record.id)">
+                                        <a-button type="primary" danger ghost>删除</a-button>
+                                    </a-popconfirm>
+                                </a-space>
+                            </template>
+                        </template>
+                    </a-table>
+
+                </a-col>
+                <a-col :xs="14">
+                    <a-form :model="documentOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }"
+                        autocomplete="off">
+
+                        <a-form-item label="名称" name="name">
+                            <a-input v-model:value="documentOne.name" />
+                        </a-form-item>
+
+                        <a-form-item label="父文档" name="name">
+                            <a-tree-select v-model:value="documentOne.parent" style="width: 100%"
+                                :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }" :tree-data="treeSelectData"
+                                placeholder="请选择父文档" tree-default-expand-all
+                                :field-names="{ label: 'name', value: 'id', children: 'children' }">
+                            </a-tree-select>
+                        </a-form-item>
+
+                        <a-form-item label="顺序" name="sort">
+                            <a-input v-model:value="documentOne.sort" />
+                        </a-form-item>
+
+                        <a-form-item label="内容">
+                            <div id="content"></div>
+                        </a-form-item>
+
+                    </a-form>
+                </a-col>
+            </a-row>
         </a-layout-content>
     </a-layout>
-
-    <a-modal v-model:open="open" :confirm-loading="confirmLoading" title="文档表单" @ok="handleOk" okText="确定"
-        cancelText="取消">
-        <a-form :model="documentOne" name="basic" :label-col="{ span: 8 }" :wrapper-col="{ span: 16 }"
-            autocomplete="off">
-
-            <a-form-item label="名称" name="name">
-                <a-input v-model:value="documentOne.name" />
-            </a-form-item>
-
-            <a-form-item label="父文档" name="name">
-                <a-tree-select v-model:value="documentOne.parent" style="width: 100%"
-                    :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }" :tree-data="treeSelectData"
-                    placeholder="请选择父文档" tree-default-expand-all
-                    :field-names="{ label: 'name', value: 'id', children: 'children' }">
-                </a-tree-select>
-            </a-form-item>
-
-            <a-form-item label="顺序" name="sort">
-                <a-input v-model:value="documentOne.sort" />
-            </a-form-item>
-
-            <a-form-item label="内容">
-                <div id="content"></div>
-            </a-form-item>
-
-        </a-form>
-    </a-modal>
 </template>
 
 <script lang="ts">
@@ -119,11 +123,20 @@ export default defineComponent({
         ]
 
         const editor = new E("#content")
+        
+
+        const level1 = ref();
+
+        const documentOne = ref();
+        documentOne.value = {
+            ebookId: route.query.ebookId
+        };
+
+
 
         /**
          * 数据查询
          */
-        const level1 = ref();
 
         const handleQuery = () => {
             loading.value = true
@@ -150,7 +163,6 @@ export default defineComponent({
         /**
          * 编辑
          */
-        const documentOne = ref();
         const edit = (record: any) => {
 
             open.value = true;
@@ -162,11 +174,6 @@ export default defineComponent({
 
             //为选择树添加一个"无"
             treeSelectData.value.unshift({ id: 0, name: '无' });
-            setTimeout(function () {
-                editor.create()
-
-            },100);
-
         }
 
         //因为树选择组件的属性状态，会随着当前编辑的节点而变化，所以单独声明一个响应式变量
@@ -191,19 +198,16 @@ export default defineComponent({
         /**新增 */
         const add = () => {
             open.value = true;
+
             documentOne.value = {
                 ebookId: route.query.ebookId
             };
+
 
             treeSelectData.value = Tool.copy(level1.value);
 
             //为选择树添加一个"无"
             treeSelectData.value.unshift({ id: 0, name: '无' });
-            setTimeout(function () {
-                editor.create()
-
-            },100);
-
         }
 
         /**
@@ -320,6 +324,8 @@ export default defineComponent({
         onMounted(() => {
 
             handleQuery();
+
+            editor.create();
         })
 
 
