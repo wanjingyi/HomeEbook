@@ -162,6 +162,7 @@ export default defineComponent({
          * 编辑
          */
         const edit = (record: any) => {
+            editor.txt.html("");
             documentOne.value = Tool.copy(record);
             handleQueryContent();
 
@@ -177,7 +178,7 @@ export default defineComponent({
             axios.post('/document/save', documentOne.value).then((response) => {
                 const data = response.data
                 if (data.success) {
-
+                    message.success("保存成功");
                     //重新加载列表
                     handleQuery();
                 } else {
