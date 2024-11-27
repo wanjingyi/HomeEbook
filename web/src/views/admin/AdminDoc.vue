@@ -3,7 +3,7 @@
         <a-layout-content>
             <a-row>
                 <a-col :span="6">
-                    <a-tree v-if="level1.length > 0"  :tree-data="level1" :field-names="{ label: 'name', value: 'id', children: 'children' }" :defaultExpandAllRows="true">
+                    <a-tree v-if="level1.length > 0"  :tree-data="level1" :field-names="{ title: 'name', key: 'id', value: 'children' }" :defaultExpandAllRows="true">
                         <!-- <template #title="{ title, key }">
                             <span v-if="key === '0-0-1-0'" style="color: #1890ff">{{ title }}</span>
                             <template v-else>{{ title }}</template>
@@ -35,12 +35,14 @@ export default defineComponent({
          */
 
          const handleQuery = () => {
-            axios.get('/document/allData').then((response) => {
+            axios.get('/document/all/' + route.query.ebookId).then((response) => {
                 const data = response.data
+                console.log(data,'data');
                 if (data.success) {
                     docs.value = data.content
                     level1.value = [];
                     level1.value = Tool.array2Tree(docs.value,0);
+                    console.log(level1.value,'level1');
                 } else {
                     message.error(data.message);
                 }

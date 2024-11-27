@@ -61,6 +61,14 @@ public class DocumentController {
         return results;
     }
 
+    @GetMapping("/all/{ebookId}")
+    public CommonResp all(@PathVariable Long ebookId) {
+        CommonResp<List<DocumentQueryResp>> results = new CommonResp<>();
+        List<DocumentQueryResp> documentList = documentService.all(ebookId);
+        results.setContent(documentList);
+        return results;
+    }
+
     @GetMapping("/findContent/{id}")
     public CommonResp findContent(@PathVariable Long id) {
         CommonResp<String> results = new CommonResp<>();

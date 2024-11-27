@@ -133,6 +133,9 @@ export default defineComponent({
                     level1.value = [];
                     level1.value = Tool.array2Tree(documents.value, 0);
                     console.log("递归后数组", level1.value);
+
+                    treeSelectData.value = Tool.copy(level1.value);
+                    treeSelectData.value.unshift({id:0,name:'无'});
                 } else {
                     message.error(data.message);
                 }

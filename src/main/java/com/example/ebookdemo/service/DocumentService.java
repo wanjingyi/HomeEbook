@@ -107,6 +107,16 @@ public class DocumentService {
         return list;
     }
 
+    public List<DocumentQueryResp> all (Long ebookId) {
+        DocumentExample documentExample = new DocumentExample();
+        documentExample.createCriteria().andEbookIdEqualTo(ebookId);
+        List<Document> documentList = documentMapper.selectByExample(documentExample);
+
+        //列表复制
+        List<DocumentQueryResp> list = CopyUtil.copyList(documentList, DocumentQueryResp.class);
+        return list;
+    }
+
     public String findContent (Long id) {
 //        documentMapper.deleteByPrimaryKey(id);
         Content content = contentMapper.selectByPrimaryKey(id);
