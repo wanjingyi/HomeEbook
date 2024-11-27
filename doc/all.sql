@@ -103,3 +103,13 @@ insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) v
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (5,1,3,'示例2.2',2,0,0);
 insert into `document` (id,ebook_id, parent, name, sort,view_count,vote_count) values (6,1,5,'文档2.2.1',1,0,0);
 
+#文档内容
+drop table if exists `content`;
+create table `content`
+(
+    `id`          bigInt NOT NULL comment '文档id',
+    `content`     mediumtext not null comment '内容',
+    `create_time` datetime comment '创建时间',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment='文档内容';
+
