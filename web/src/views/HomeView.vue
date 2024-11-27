@@ -66,22 +66,25 @@ export default defineComponent({
     const ebooks: any = ref();
     const openKeys = ref<string[]>([]);
     const show_welcome = ref(true);
+    let categoryId2 = 0;
 
-    onMounted(() => {
+
+
+    const handleQueryEbook = () => {
       axios.get('/ebook/lists', {
         params: {
           page: 1,
-          size: 1000
+          size: 1000,
+          categoryId2: categoryId2
         }
       }).then((response) => {
         ebooks.value = response.data.content.list
       })
-      handleQueryCategory();
-    })
+    }
 
     /**
- * 数据查询
- */
+     * 数据查询
+     */
     const level1 = ref();
     let categorys: any;
     const handleQueryCategory = () => {
@@ -106,8 +109,15 @@ export default defineComponent({
         show_welcome.value = true
       }else {
         show_welcome.value = false
+        categoryId2 = value.key
+        handleQueryEbook();
       }
     }
+
+    onMounted(() => {
+      // handleQueryEbook();
+      handleQueryCategory();
+    })
 
     return {
       ebooks,
