@@ -29,7 +29,7 @@
                     </template>
                     <template v-else-if="column.key === 'action'">
                         <a-space>
-                            <router-link to="/admin/document">
+                            <router-link :to="'/admin/document?ebookId=' + record.id">
                                 <a-button type="primary" ghost @click="edit(record)">文档管理</a-button>
                             </router-link>
                             <a-button type="primary" ghost @click="edit(record)">编辑</a-button>

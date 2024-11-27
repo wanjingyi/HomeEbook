@@ -77,10 +77,19 @@ import axios from 'axios';
 import type { SizeType } from 'ant-design-vue/es/config-provider';
 import { message } from 'ant-design-vue';
 import { Tool } from '@/util/tool'
+import { useRoute } from 'vue-router';
 
 export default defineComponent({
     name: 'AdminDocuments',
     setup() {
+        //接收路由的参数
+        const route = useRoute();
+        // console.log("route.path",route.path);
+        // console.log("route.query",route.query);
+        // console.log("route.params",route.params);
+        // console.log("route.fullPath",route.fullPath);
+        // console.log("route.name",route.name);
+        // console.log("route.meta",route.meta);
         const size = ref<SizeType>('large');
         const documents = ref();
         const queryName = ref();
@@ -176,7 +185,14 @@ export default defineComponent({
         /**新增 */
         const add = () => {
             open.value = true;
-            documentOne.value = {};
+            documentOne.value = {
+                ebookId:route.query.ebookId
+            };
+
+            treeSelectData.value = Tool.copy(level1.value);
+
+            //为选择树添加一个"无"
+            treeSelectData.value.unshift({id:0,name:'无'});
         }
 
         /**删除 */
@@ -215,13 +231,12 @@ export default defineComponent({
        * 将某节点及其子孙节点全部置为disabled
        */
       const setDisable = (treeSelectData: any, id: any) => {
-        // console.log(treeSelectData, id);
         // 遍历数组，即遍历某一层节点
         for (let i = 0; i < treeSelectData.length; i++) {
           const node = treeSelectData[i];
           if (node.id === id) {
             // 如果当前节点就是目标节点
-            console.log("disabled", node);
+            // console.log("disabled", node);
             // 将目标节点设置为disabled
             node.disabled = true;
 
