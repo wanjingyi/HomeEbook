@@ -1,7 +1,9 @@
 package com.example.ebookdemo.service;
 
+import com.example.ebookdemo.domain.Content;
 import com.example.ebookdemo.domain.Document;
 import com.example.ebookdemo.domain.DocumentExample;
+import com.example.ebookdemo.mapper.ContentMapper;
 import com.example.ebookdemo.mapper.DocumentMapper;
 import com.example.ebookdemo.req.DocumentQueryReq;
 import com.example.ebookdemo.req.DocumentSaveReq;
@@ -24,6 +26,9 @@ public class DocumentService {
     private static final Logger LOG = LoggerFactory.getLogger(DocumentService.class);
     @Resource
     private DocumentMapper documentMapper;
+
+    @Resource
+    private ContentMapper contentMapper;
 
     @Resource
     private SnowFlake snowFlake;
@@ -61,13 +66,22 @@ public class DocumentService {
 
     public void saveDocument(DocumentSaveReq documentSaveReq) {
         Document document = CopyUtil.copy(documentSaveReq, Document.class);
+        Content content = CopyUtil.copy(documentSaveReq, Content.class);
         if (ObjectUtils.isEmpty(documentSaveReq.getId())) {
             //新增
             document.setId(snowFlake.nextId());
             documentMapper.insert(document);
+            //文本框内容新增
+            content.setId(document.getId());
+            contentMapper.insert(content);
         }else {
             //更新
             documentMapper.updateByPrimaryKey(document);
+            //文本框更新
+            int i = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (i == 0) {
+                contentMapper.insert(content);
+            }
         }
     }
 

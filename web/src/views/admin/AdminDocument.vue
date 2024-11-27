@@ -159,9 +159,6 @@ export default defineComponent({
          * 编辑
          */
         const edit = (record: any) => {
-
-            // open.value = true;
-
             documentOne.value = Tool.copy(record);
 
             treeSelectData.value = Tool.copy(level1.value);
@@ -174,6 +171,7 @@ export default defineComponent({
         //因为树选择组件的属性状态，会随着当前编辑的节点而变化，所以单独声明一个响应式变量
         const handleOk = () => {
             confirmLoading.value = true;
+            documentOne.value.content = editor.txt.html();
             axios.post('/document/save', documentOne.value).then((response) => {
                 const data = response.data
                 confirmLoading.value = false;
@@ -192,7 +190,7 @@ export default defineComponent({
 
         /**新增 */
         const add = () => {
-            // open.value = true;
+            editor.txt.html("");
 
             documentOne.value = {
                 ebookId: route.query.ebookId
