@@ -6,6 +6,7 @@ import com.example.ebookdemo.exception.BusinessException;
 import com.example.ebookdemo.exception.BusinessExceptionCode;
 import com.example.ebookdemo.mapper.UserMapper;
 import com.example.ebookdemo.req.UserQueryReq;
+import com.example.ebookdemo.req.UserRestPasswordReq;
 import com.example.ebookdemo.req.UserSaveReq;
 import com.example.ebookdemo.resp.PageResp;
 import com.example.ebookdemo.resp.UserQueryResp;
@@ -63,8 +64,8 @@ public class UserService {
         User user = CopyUtil.copy(userSaveReq, User.class);
         if (ObjectUtils.isEmpty(userSaveReq.getId())) {
             User userDB = selectByLoginName(user.getLoginName());
-
-            if (!ObjectUtils.isEmpty(userDB)) {
+            LOG.info("数据库用户：{}",userDB);
+            if (ObjectUtils.isEmpty(userDB)) {
                 //新增
                 user.setId(snowFlake.nextId());
                 userMapper.insert(user);
@@ -75,8 +76,14 @@ public class UserService {
         }else {
             //更新
             user.setLoginName(null);
+            user.setPassword(null);
             userMapper.updateByPrimaryKeySelective(user);
         }
+    }
+
+    public void resetPassword(UserRestPasswordReq req) {
+        User user = CopyUtil.copy(req, User.class);
+        userMapper.updateByPrimaryKeySelective(user);
     }
 
     public void delete (Long id) {
