@@ -118,13 +118,11 @@ public class DocumentService {
     }
 
     public String findContent (Long id) {
-//        documentMapper.deleteByPrimaryKey(id);
         Content content = contentMapper.selectByPrimaryKey(id);
         if (ObjectUtils.isEmpty(content)) {
             return "";
         }else {
             return  content.getContent();
-
         }
     }
 }
