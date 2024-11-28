@@ -90,19 +90,23 @@ export default defineComponent({
         const columns = [
             {
                 title: '登陆名',
-                dataIndex: 'loginName'
+                dataIndex: 'loginName',
+                key: ''
             },
             {
                 title: '名称',
-                dataIndex: 'name'
+                dataIndex: 'name',
+                 key: 'name'
             },
             {
                 title: '密码',
-                dataIndex: 'password'
+                dataIndex: 'password',
+                 key: 'password'
             },
             {
                 title: 'Action',
                 key: 'action',
+                // dataIndex:'action'
                 slots: { customRender: 'action' }
             }
         ];

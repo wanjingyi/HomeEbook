@@ -2,6 +2,8 @@ package com.example.ebookdemo.service;
 
 import com.example.ebookdemo.domain.User;
 import com.example.ebookdemo.domain.UserExample;
+import com.example.ebookdemo.exception.BusinessException;
+import com.example.ebookdemo.exception.BusinessExceptionCode;
 import com.example.ebookdemo.mapper.UserMapper;
 import com.example.ebookdemo.req.UserQueryReq;
 import com.example.ebookdemo.req.UserSaveReq;
@@ -60,16 +62,35 @@ public class UserService {
     public void saveUser(UserSaveReq userSaveReq) {
         User user = CopyUtil.copy(userSaveReq, User.class);
         if (ObjectUtils.isEmpty(userSaveReq.getId())) {
-            //新增
-            user.setId(snowFlake.nextId());
-            userMapper.insert(user);
+            User userDB = selectByLoginName(user.getLoginName());
+
+            if (!ObjectUtils.isEmpty(userDB)) {
+                //新增
+                user.setId(snowFlake.nextId());
+                userMapper.insert(user);
+            }else {
+                //用户名已存在
+                throw new BusinessException(BusinessExceptionCode.USER_LOGIN_NAME_EXIST);
+            }
         }else {
             //更新
-            userMapper.updateByPrimaryKey(user);
+            user.setLoginName(null);
+            userMapper.updateByPrimaryKeySelective(user);
         }
     }
 
     public void delete (Long id) {
         userMapper.deleteByPrimaryKey(id);
+    }
+
+    public User selectByLoginName(String loginName) {
+        UserExample userExample = new UserExample();
+        UserExample.Criteria criteria = userExample.createCriteria();
+        criteria.andLoginNameEqualTo(loginName);
+        List<User> userList = userMapper.selectByExample(userExample);
+        if (userList!= null && userList.size() > 0) {
+            return userList.get(0);
+        }
+        return null;
     }
 }
