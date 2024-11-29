@@ -5,10 +5,12 @@ import com.example.ebookdemo.domain.UserExample;
 import com.example.ebookdemo.exception.BusinessException;
 import com.example.ebookdemo.exception.BusinessExceptionCode;
 import com.example.ebookdemo.mapper.UserMapper;
+import com.example.ebookdemo.req.UserLoginReq;
 import com.example.ebookdemo.req.UserQueryReq;
 import com.example.ebookdemo.req.UserRestPasswordReq;
 import com.example.ebookdemo.req.UserSaveReq;
 import com.example.ebookdemo.resp.PageResp;
+import com.example.ebookdemo.resp.UserLoginResp;
 import com.example.ebookdemo.resp.UserQueryResp;
 import com.example.ebookdemo.util.CopyUtil;
 import com.example.ebookdemo.util.SnowFlake;
@@ -99,5 +101,26 @@ public class UserService {
             return userList.get(0);
         }
         return null;
+    }
+
+    public UserLoginResp login (UserLoginReq req) {
+        User userDB = selectByLoginName(req.getLoginName());
+        if (ObjectUtils.isEmpty(userDB)) {
+            //用户名不存在
+            LOG.info("Login:{}", req.getLoginName());
+            throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+        }else {
+            if (!userDB.getPassword().equals(req.getPassword())) {
+                //账号，密码不对
+                LOG.info("Login:{}", req.getLoginName());
+                LOG.info("请求密码Password:{}", req.getPassword());
+                LOG.info("数据库密码DBPassword:{}", userDB.getPassword());
+                throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+            }else {
+                //
+                UserLoginResp userLoginResp = CopyUtil.copy(userDB, UserLoginResp.class);
+                return userLoginResp;
+            }
+        }
     }
 }

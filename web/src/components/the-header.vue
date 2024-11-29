@@ -17,14 +17,40 @@
             <a-menu-item key="/about">
                 <router-link to="/about">关于我们</router-link>
             </a-menu-item>
+            <!-- <a class="login-menu" @click="showLoginModal">
+                登陆
+            </a> -->
+            <a-button name="登录"></a-button>
         </a-menu>
     </a-layout-header>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
     name: 'TheHeader',
+
+    setup() {
+        const loginModalVisible = ref(false);
+        const showLoginModal = () => {
+            loginModalVisible.value = true;
+        };
+
+        return {
+            showLoginModal,
+            loginModalVisible
+
+        }
+    }
 });
+
 </script>
+
+<style scoped>
+  .login-menu {
+    float: right;
+    color: white;
+    padding-left: 10px;
+  }
+</style>

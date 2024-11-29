@@ -1,10 +1,12 @@
 package com.example.ebookdemo.controller;
 
+import com.example.ebookdemo.req.UserLoginReq;
 import com.example.ebookdemo.req.UserQueryReq;
 import com.example.ebookdemo.req.UserRestPasswordReq;
 import com.example.ebookdemo.req.UserSaveReq;
 import com.example.ebookdemo.resp.CommonResp;
 import com.example.ebookdemo.resp.PageResp;
+import com.example.ebookdemo.resp.UserLoginResp;
 import com.example.ebookdemo.resp.UserQueryResp;
 import com.example.ebookdemo.service.UserService;
 import jakarta.annotation.Resource;
@@ -53,5 +55,14 @@ public class UserController {
         CommonResp results = new CommonResp<>();
        userService.delete(id);
         return results;
+    }
+
+    @PostMapping("/login")
+    public CommonResp login(@RequestBody @Valid UserLoginReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp<UserLoginResp> resp = new CommonResp<>();
+        UserLoginResp userLoginResp = userService.login(req);
+        resp.setContent(userLoginResp);
+        return resp;
     }
 }
