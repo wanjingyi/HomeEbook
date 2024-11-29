@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, onMounted, ref,computed } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 declare let hexMd5: any;
@@ -64,8 +64,7 @@ export default defineComponent({
             password: "123456"
         });
         //登陆后保存
-        const user = ref();
-        user.value = {};
+        const user = computed(() =>  store.state.user)
 
         const showLoginModal = () => {
             loginModalVisible.value = true;
