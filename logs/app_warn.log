@@ -2,4 +2,5 @@
 "2024-11-29 13:48:17 WARN --- [http-nio-8081-exec-9] com.example.ebookdemo.controller.ControllerExceptionHandler : 业务异常：用户名不存在或密码错误
 "2024-11-29 13:48:17 WARN --- [http-nio-8081-exec-9] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : Resolved [com.example.ebookdemo.exception.BusinessException: 用户名不存在或密码错误]
 "2024-11-29 14:00:12 WARN --- [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Injection of resource dependencies failed
+"2024-11-29 15:09:27 WARN --- [http-nio-8081-exec-8] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.redis.RedisSystemException: Redis exception]
 "

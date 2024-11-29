@@ -308,4 +308,371 @@
 "2024-11-29 14:00:14 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
 "2024-11-29 14:00:14 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
 "2024-11-29 14:00:45 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 78 class path changes (0 additions, 78 deletions, 0 modifications)
+"2024-11-29 14:06:56 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:06:56 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:06:56 INFO --- [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+"2024-11-29 14:06:56 INFO --- [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+"2024-11-29 14:06:56 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:06:56 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:06:56 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:06:57 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:06:57 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 2.019 seconds (process running for 2.664)
+"2024-11-29 14:06:57 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:06:57 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:08:29 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:08:29 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:08:29 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:08:29 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:08:29 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:08:29 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 178 ms
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:08:30 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.577 seconds (process running for 95.122)
+"2024-11-29 14:08:30 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:08:30 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:08:30 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:09:33 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:09:33 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:09:33 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:09:33 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.558 seconds (process running for 158.55)
+"2024-11-29 14:09:33 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:09:33 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:09:33 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:10:22 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:10:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:10:22 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:10:22 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+"2024-11-29 14:10:23 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:10:23 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:10:23 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.532 seconds (process running for 207.97)
+"2024-11-29 14:10:23 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:10:23 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:10:23 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:11:12 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+"2024-11-29 14:11:12 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:11:12 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:11:12 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+"2024-11-29 14:11:13 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:11:13 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:11:13 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.525 seconds (process running for 257.989)
+"2024-11-29 14:11:13 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:11:13 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:11:13 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:12:41 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+"2024-11-29 14:12:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:12:41 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:12:41 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 139 ms
+"2024-11-29 14:12:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:12:42 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:12:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.507 seconds (process running for 346.88)
+"2024-11-29 14:12:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:12:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:12:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:14:13 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+"2024-11-29 14:14:13 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:14:13 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:14:13 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+"2024-11-29 14:14:14 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:14:14 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:14:14 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.543 seconds (process running for 438.933)
+"2024-11-29 14:14:14 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:14:14 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:14:14 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:14:15 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+"2024-11-29 14:14:15 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:14:15 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:14:15 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 155 ms
+"2024-11-29 14:14:16 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:14:16 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:14:16 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.49 seconds (process running for 440.909)
+"2024-11-29 14:14:16 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:14:16 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:14:16 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:15:18 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:15:18 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:15:18 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:15:18 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.498 seconds (process running for 503.653)
+"2024-11-29 14:15:18 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:15:18 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:15:18 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:26:32 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+"2024-11-29 14:26:32 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:26:32 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:26:32 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.496 seconds (process running for 1177.246)
+"2024-11-29 14:26:32 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:26:32 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:26:32 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:27:03 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+"2024-11-29 14:27:03 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:27:03 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:27:03 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+"2024-11-29 14:27:04 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:27:04 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:27:04 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.527 seconds (process running for 1208.966)
+"2024-11-29 14:27:04 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:27:04 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:27:04 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:27:26 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:27:26 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:27:26 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:27:26 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+"2024-11-29 14:27:27 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:27:27 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:27:27 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.479 seconds (process running for 1231.73)
+"2024-11-29 14:27:27 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:27:27 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:27:27 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:29:01 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:29:01 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:29:01 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 134 ms
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:29:01 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.493 seconds (process running for 1326.325)
+"2024-11-29 14:29:01 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:29:01 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:29:01 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:30:52 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:30:52 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:30:52 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 139 ms
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:30:53 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.458 seconds (process running for 1438.06)
+"2024-11-29 14:30:53 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:30:53 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:30:53 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:32:09 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:32:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:32:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:32:09 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+"2024-11-29 14:32:10 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:32:10 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:32:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.503 seconds (process running for 1514.937)
+"2024-11-29 14:32:10 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:32:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:32:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:34:09 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+"2024-11-29 14:34:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:34:09 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:34:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:34:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:34:09 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:34:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.466 seconds (process running for 1635.011)
+"2024-11-29 14:34:10 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:34:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:34:10 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:35:41 INFO --- [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+"2024-11-29 14:35:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Starting EbookDemoApplication using Java 21.0.1 with PID 28556 (D:\practive_project\testPractice\HomeEbook\target\classes started by e1561 in D:\practive_project\testPractice\HomeEbook)
+"2024-11-29 14:35:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : No active profile set, falling back to 1 default profile: "default"
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8081 (http)
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.31]
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8081 (http) with context path ''
+"2024-11-29 14:35:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : Started EbookDemoApplication in 0.489 seconds (process running for 1727.166)
+"2024-11-29 14:35:42 INFO --- [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+"2024-11-29 14:35:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 启动成功！！
+"2024-11-29 14:35:42 INFO --- [restartedMain] com.example.ebookdemo.config.EbookDemoApplication : 地址: 	http://127.0.0.1:8081
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 2 ms
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 14:36:04 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ecdbda2
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 528845694, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1595638689, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 528845694, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1595638689, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 528845694, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1595638689, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 14:36:05 INFO --- [http-nio-8081-exec-1] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：305 ms -------------
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/login POST
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.login
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"loginName":"admin"}]
+"2024-11-29 14:36:13 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.controller.UserController : 生成单点登陆token：517589586801725440,并存入redis
+"2024-11-29 14:36:14 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"id":1,"loginName":"admin","name":"admin","token":"517589586801725440"},"success":true}
+"2024-11-29 14:36:14 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：458 ms -------------
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1050463471, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2100940776, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1050463471, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2100940776, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1050463471, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2100940776, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 15:08:57 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：5 ms -------------
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/login POST
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.login
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"loginName":"admin"}]
+"2024-11-29 15:09:05 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.controller.UserController : 生成单点登陆token：517597857214238720,并存入redis
+"2024-11-29 15:09:27 INFO --- [lettuce-eventExecutorLoop-34-1] io.lettuce.core.protocol.ConnectionWatchdog : Reconnecting, last destination was r-uf6ljbcdaxobsifyctpd.redis.rds.aliyuncs.com/47.103.172.100:6379
+"2024-11-29 15:09:27 INFO --- [lettuce-nioEventLoop-36-2] io.lettuce.core.protocol.ReconnectionHandler : Reconnected to r-uf6ljbcdaxobsifyctpd.redis.rds.aliyuncs.com/<unresolved>:6379, Channel channel=0xd3730fdb, /192.168.43.49:54638 -> r-uf6ljbcdaxobsifyctpd.redis.rds.aliyuncs.com/47.103.172.100:6379
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1905595134, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1881187203, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1905595134, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1881187203, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1905595134, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1881187203, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 15:09:43 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/login POST
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.login
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"loginName":"admin"}]
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.controller.UserController : 生成单点登陆token：517598041432264704,并存入redis
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"id":1,"loginName":"admin","name":"admin","token":"517598041432264704"},"success":true}
+"2024-11-29 15:09:49 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：45 ms -------------
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 760139045, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 754711608, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 760139045, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 754711608, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 760139045, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 754711608, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 15:15:39 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
 "
