@@ -1,5 +1,6 @@
 package com.example.ebookdemo.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.ebookdemo.req.UserLoginReq;
 import com.example.ebookdemo.req.UserQueryReq;
 import com.example.ebookdemo.req.UserRestPasswordReq;
@@ -9,12 +10,16 @@ import com.example.ebookdemo.resp.PageResp;
 import com.example.ebookdemo.resp.UserLoginResp;
 import com.example.ebookdemo.resp.UserQueryResp;
 import com.example.ebookdemo.service.UserService;
+import com.example.ebookdemo.util.SnowFlake;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.TimeUnit;
 
 
 @RestController
@@ -24,6 +29,12 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    @Resource
+    private SnowFlake snowFlake;
+
+    @Resource
+    private RedisTemplate redisTemplate;
+    
     @GetMapping("/lists")
     public CommonResp allList(@Valid UserQueryReq req) {
         CommonResp<PageResp<UserQueryResp>> results = new CommonResp<>();
@@ -62,6 +73,11 @@ public class UserController {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp<UserLoginResp> resp = new CommonResp<>();
         UserLoginResp userLoginResp = userService.login(req);
+        //生成单点登陆token，并放入redis中
+        Long token = snowFlake.nextId();
+        LOG.info("生成单点登陆token：{},并存入redis",token);
+        userLoginResp.setToken(token.toString());
+        redisTemplate.opsForValue().set(token, JSONObject.toJSONString(userLoginResp),3600 * 24 , TimeUnit.SECONDS);
         resp.setContent(userLoginResp);
         return resp;
     }

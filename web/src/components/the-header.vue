@@ -19,7 +19,12 @@
                     <router-link to="/about">关于我们</router-link>
                 </a-menu-item>
             </div>
-            <div class="unque" @click="showLoginModal">
+            <div class="unque" @click="showLoginModal" v-show="user.id" >
+                <a class="login-menu">
+                    <span>您好：{{user.name}}</span>
+                </a>
+            </div>
+            <div class="unque" @click="showLoginModal" v-show="!user.id">
                 <a class="login-menu">
                     <span>登录</span>
                 </a>
@@ -55,8 +60,11 @@ export default defineComponent({
         // 用来登录
         const loginUser = ref({
             loginName: "admin",
-            password: "admin"
+            password: "123456"
         });
+        //登陆后保存
+        const user = ref();
+        user.value = {};
 
         const showLoginModal = () => {
             loginModalVisible.value = true;
@@ -74,7 +82,7 @@ export default defineComponent({
                 if (data.success) {
                     loginModalVisible.value = false;
                     message.success("登录成功！");
-
+                    user.value = data.content
                     // store.commit("setUser", data.content);
                 } else {
                     message.error(data.message);
@@ -92,8 +100,8 @@ export default defineComponent({
             loginModalVisible,
             loginModalLoading,
             loginUser,
-            login
-
+            login,
+            user
         }
     }
 });
