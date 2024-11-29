@@ -102,4 +102,100 @@
 "2024-11-29 10:09:22 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 498841614, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1944959075, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
 "2024-11-29 10:09:22 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
 "2024-11-29 10:09:22 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 30288245, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1790883644, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 30288245, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1790883644, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 30288245, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1790883644, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:13:59 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1549151304, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 442604119, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1549151304, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 442604119, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1549151304, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 442604119, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:23:12 INFO --- [http-nio-8081-exec-3] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 129347099, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 557982273, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 129347099, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 557982273, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 129347099, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 557982273, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:24:04 INFO --- [http-nio-8081-exec-6] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1839482727, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 310824814, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1839482727, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 310824814, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1839482727, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 310824814, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:24:13 INFO --- [http-nio-8081-exec-9] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：5 ms -------------
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1791439428, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1528536250, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1791439428, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1528536250, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1791439428, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1528536250, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:29:33 INFO --- [http-nio-8081-exec-8] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：4 ms -------------
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1650951160, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1674616439, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1650951160, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1674616439, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1650951160, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1674616439, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 10:30:39 INFO --- [http-nio-8081-exec-4] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：3 ms -------------
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1776245835, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2142139741, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1776245835, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2142139741, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1776245835, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 2142139741, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 13:35:09 INFO --- [http-nio-8081-exec-2] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：22 ms -------------
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : ------------- 开始 -------------
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop请求地址: http://127.0.0.1:8081/user/lists GET
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop类名方法: com.example.ebookdemo.controller.UserController.allList
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop远程地址: 127.0.0.1
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop请求参数: [{"page":1,"size":10}]
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 总条数:2
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 总页数:1
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : list: [UserQueryResp [Hash = 1054364632, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1938407749, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.service.UserService : 数据: PageResp{total=2, list=[UserQueryResp [Hash = 1054364632, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1938407749, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.controller.UserController : 数据Controller: PageResp{total=2, list=[UserQueryResp [Hash = 1054364632, id=1, loginName=admin, name=admin, password=fb09b64e309e1c33e7cf8cfe99b07bd5], UserQueryResp [Hash = 1938407749, id=517232167357648896, loginName=test, name=test, password=fb09b64e309e1c33e7cf8cfe99b07bd5]]}
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : aop返回结果: {"content":{"list":[{"id":1,"loginName":"admin","name":"admin"},{"id":517232167357648896,"loginName":"test","name":"test"}],"total":2},"success":true}
+"2024-11-29 13:35:16 INFO --- [http-nio-8081-exec-5] com.example.ebookdemo.aspect.LogAspect : ------------- aop结束 耗时：18 ms -------------
 "
