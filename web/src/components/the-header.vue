@@ -19,14 +19,23 @@
                     <router-link to="/about">关于我们</router-link>
                 </a-menu-item>
             </div>
-            <div class="unque" @click="showLoginModal" v-show="user.id" >
-                <a class="login-menu">
-                    <span>您好：{{user.name}}</span>
-                </a>
-            </div>
+
             <div class="unque" @click="showLoginModal" v-show="!user.id">
                 <a class="login-menu">
                     <span>登录</span>
+                </a>
+            </div>
+
+            <div class="unque_log" v-show="user.id">
+                <a class="login-menu_log">
+                    <span>您好：{{ user.name }}</span>
+                </a>
+
+            </div>
+            <div class="unque_tuichu" v-show="user.id" @click="loginout">
+                <!-- <a-button type="primary" ghost @click="loginout">退出登录</a-button> -->
+                <a class="logout-menu">
+                    <span>退出登录</span>
                 </a>
             </div>
         </a-menu>
@@ -45,7 +54,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref,computed } from 'vue';
+import { defineComponent, onMounted, ref, computed } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 declare let hexMd5: any;
@@ -64,7 +73,7 @@ export default defineComponent({
             password: "123456"
         });
         //登陆后保存
-        const user = computed(() =>  store.state.user)
+        const user = computed(() => store.state.user)
 
         const showLoginModal = () => {
             loginModalVisible.value = true;
@@ -84,16 +93,35 @@ export default defineComponent({
                     message.success("登录成功！");
                     // user.value = data.content
                     // store.commit("setUser",user.value);
-                    store.commit("setUser",data.content);
+                    store.commit("setUser", data.content);
                 } else {
                     message.error(data.message);
                 }
             });
         };
 
+        const loginout = () => {
+            console.log('1111');
+            axios.get('/user/loginout/' + user.value.token).then((response) => {
+                console.log(response, '222222');
+                const data = response.data;
+                if (data.success) {
+                    message.success("退出登录成功！");
+
+                    store.commit("setUser", {});
+                } else {
+                    message.error(data.message);
+                }
+            });
+        }
+
         onMounted(() => {
             let elements = document.getElementsByClassName("unque")
             elements[0].remove();
+            let elements_log = document.getElementsByClassName("unque_log")
+            elements_log[0].remove();
+            let elements_one = document.getElementsByClassName("unque_tuichu")
+            elements_one[0].remove();
         });
 
         return {
@@ -102,7 +130,8 @@ export default defineComponent({
             loginModalLoading,
             loginUser,
             login,
-            user
+            user,
+            loginout
         }
     }
 });
@@ -111,13 +140,32 @@ export default defineComponent({
 
 <style scoped>
 .unque {
-    width: 700px !important
+    width: 100px !important
 }
 
 .unque .login-menu {
     float: right !important;
     color: white !important;
     padding-right: 10px;
+}
 
+.unque_log {
+    width: 100px !important
+}
+
+.unque_log .login-menu_log {
+    float: right !important;
+    color: white !important;
+    padding-right: 10px;
+}
+
+.unque_tuichu {
+    width: 80px !important
+}
+
+.unque_tuichu .logout-menu {
+    float: right !important;
+    color: white !important;
+    padding-right: 10px;
 }
 </style>

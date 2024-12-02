@@ -7,11 +7,15 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
 import * as Icon from '@ant-design/icons-vue';
 import axios from 'axios'
+import { Tool } from '@/util/tool'
 
 axios.defaults.baseURL = process.env.VUE_APP_SERVER
 
 const app = createApp(App);
 app.use(store).use(router).use(Antd).mount('#app')
+
+// axios.defaults.withCredentials = true;
+
 
 //全局使用图标
 const icons : any = Icon;
@@ -26,6 +30,11 @@ console.log('服务端',process.env.VUE_APP_SERVER);
 axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
     console.log('请求参数',config);
+    const token = store.state.user.token;
+    if (Tool.isNotEmpty(token)) {
+      config.headers.token = token;
+      console.log("请求headers增加token:", token);
+    }
     return config;
   }, function (error) {
     // 对请求错误做些什么

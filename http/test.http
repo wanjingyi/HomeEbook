@@ -11,3 +11,12 @@ GET http://localhost:8081/ebook/lists?page=1&size=10001
 
 ###
 GET http://localhost:8081/document/findContent/516907506136649728
+
+###
+GET http://127.0.0.1:8081/user/loginout/518617186558939136
+
+###
+POST http://127.0.0.1:8081/ebook/save
+Content-type: application/json
+
+{}
